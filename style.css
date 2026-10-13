@@ -1,0 +1,40 @@
+:root{--bg:#101417;--panel:#171d21;--panel2:#1e262b;--line:#2b353b;--fg:#e7ecee;--mute:#93a2ac;--accent:#e7ecee;
+--cue-video:#ff5a5a;--cue-slide:#ffe14d;--cue-general:#66ccff;--cue-audio:#66ff66;--cue-bookmark:#ff9f40;
+--brand:"Chakra Petch",system-ui,sans-serif;--display:"Hanken Grotesk",system-ui,sans-serif;--ui:"Hanken Grotesk",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,monospace}
+*{box-sizing:border-box}html{scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 var(--ui)}
+a{color:var(--fg)}:focus-visible{outline:2px solid var(--fg);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:20px}
+.top{position:sticky;top:0;z-index:5;background:#101417ee;backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:20px;min-height:62px;flex-wrap:wrap}
+.logo{display:flex}.logo img{display:block;height:34px;width:auto}
+nav{display:flex;gap:4px;flex:1;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--mute);padding:6px 10px;border-radius:6px;font-weight:500;font-size:15px}
+nav a:hover{color:var(--fg)}nav a[aria-current=page]{color:var(--fg);box-shadow:inset 0 -2px 0 var(--fg)}
+h1,h2,h3{font-family:var(--display);line-height:1.15;margin:0;text-wrap:balance}
+h1{font-size:clamp(34px,5.5vw,60px);font-weight:800;letter-spacing:-.02em}h2{font-size:clamp(24px,3vw,32px);margin-bottom:14px}h3{font-size:20px;margin-bottom:6px}
+.hero{padding:72px 0 40px}.sub{font-size:clamp(17px,2vw,21px);color:var(--mute);max-width:60ch;margin:16px 0 28px}
+section{padding-block:28px}.cta{text-align:center;padding-block:64px}
+.cols{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.cols article{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:20px}
+.cols p{color:var(--mute);margin:0}
+.stack{display:flex;flex-direction:column;gap:24px}.feat{display:grid;gap:24px;grid-template-columns:1fr 1.3fr;align-items:center;border-top:1px solid var(--line);padding-top:24px}
+.prose{max-width:70ch}.prose p,.prose li{color:var(--mute)}.note{font-size:14px;color:var(--mute)}.mono{font-family:var(--mono);font-size:14px;color:var(--mute)}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--fg);color:#0b0d10;text-decoration:none;font:700 16px var(--brand);letter-spacing:.06em;text-transform:uppercase;padding:13px 24px;
+ clip-path:polygon(9px 0,calc(100% - 9px) 0,100% 9px,100% calc(100% - 9px),calc(100% - 9px) 100%,9px 100%,0 calc(100% - 9px),0 9px)}
+.btn:hover{background:#fff}.btn.small{padding:8px 16px;font-size:14px;clip-path:polygon(6px 0,calc(100% - 6px) 0,100% 6px,100% calc(100% - 6px),calc(100% - 6px) 100%,6px 100%,0 calc(100% - 6px),0 6px)}
+.chev{width:11px;height:24px;flex:none}.link{margin-left:18px;color:var(--mute)}
+.ph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;text-align:center;padding:20px;color:var(--mute);font-size:14px;
+ border:1px dashed #3a4650;border-radius:8px;background:repeating-linear-gradient(135deg,#131a1e 0 12px,#161d22 12px 24px)}
+.ph span{font:500 11px var(--mono);letter-spacing:.1em;color:#6b7a85}
+footer{border-top:1px solid var(--line);margin-top:48px;padding-block:28px;color:var(--mute);font-size:14px}
+.foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}footer a{color:var(--mute)}
+@media(max-width:700px){.feat{grid-template-columns:1fr}.hero{padding-top:44px}}
+.cols article .ph{margin-bottom:14px}
+
+/* reading line: the chevron stays put while the page scrolls under it */
+.readline{position:fixed;left:0;top:38vh;width:100%;height:0;z-index:4;pointer-events:none;color:var(--fg)}
+.readline svg{position:absolute;left:max(6px,calc((100vw - 1080px)/4 - 6px));top:-14px;width:12px;height:28px;filter:drop-shadow(0 0 8px #e7ecee55)}
+.readline::after{content:"";position:absolute;left:max(24px,calc((100vw - 1080px)/4 + 12px));width:max(0px,calc((100vw - 1080px)/4 + 4px));top:0;height:1px;background:linear-gradient(90deg,#e7ecee55,#e7ecee00)}
+@media(max-width:700px){.readline svg{left:3px;width:9px;height:21px;top:-10px}.readline::after{display:none}}
+@media print{.readline{display:none}}
