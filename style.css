@@ -38,3 +38,11 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding-block:28px;color
 .readline svg{position:absolute;left:3px;top:-10px;width:9px;height:21px}
 @media(min-width:1200px){.readline svg{width:36px;height:84px;top:-42px;left:calc(50% - 540px + 20px - 40px - 36px)}}
 @media print{.readline{display:none}}
+
+/* pillar pages */
+.eyebrow{font:500 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--mute);margin:0 0 8px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.crumb{color:var(--mute)}.cols h3 a,.cols h3 a:visited{color:var(--fg);text-decoration:none}.cols h3 a:hover{text-decoration:underline}
+.badge{font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--fg);border:1px solid var(--control,#66747e);border-radius:99px;padding:2px 9px}
+.feat-text{grid-template-columns:1fr}.feat p{color:var(--mute);margin:8px 0 0;max-width:62ch}.feat h2{margin-bottom:0}
+.feat h2 a{color:var(--fg);text-decoration:none}.feat h2 a:hover{text-decoration:underline}.link0{color:var(--fg)}
+.pager{display:flex;justify-content:space-between;padding-block:8px 0}.pager a{color:var(--mute);text-decoration:none;font-weight:600}.pager a:hover{color:var(--fg)}
