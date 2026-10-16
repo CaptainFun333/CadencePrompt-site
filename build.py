@@ -9,7 +9,7 @@ SITE = "https://cadenceprompt.com/"
 
 def page(fn, title, desc, body, cur=None):
     cur = cur or fn
-    nav = "".join(f'<a href="{h}"{" aria-current=\"page\"" if h == cur else ""}>{t}</a>' for h, t in NAV)
+    nav = "".join('<a href="%s"%s>%s</a>' % (h, ' aria-current="page"' if h == cur else "", t) for h, t in NAV)
     return f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{title}</title><meta name="description" content="{desc}">
@@ -142,10 +142,39 @@ PILLARS = [
 ]
 
 
+# Real screenshots, by feature title: (file in assets/shots, alt text). A feature with no entry keeps its placeholder.
+# All were captured from the app with a fictional sample script; see docs/screenshots in the Cadence repo.
+SHOTS = {
+    "Speaker timer": ("time-speaker-timer.png", "The speaker timer page: the time remaining as a large clock on the right, and on the left the real time, an estimate of 11 seconds under time, Coming up and the pace."),
+    "Coming up": ("time-coming-up.png", "Coming up in the operator window: eight cues ahead of the reading line, each with its kind, name and the time until it."),
+    "Timer cues in the script": ("time-timer-cues.png", "The live bar indicator reading Armed 5 in green and OFF 5 in red, and below it the timer card with a stopped green clock after a segment finished early."),
+    "Share the speaker timer": ("time-share.png", "The Share on the network panel with its addresses and viewer count, next to the speaker timer page open in a browser."),
+    "Cue colors": ("time-cue-colors.png", "The script editor with a bookmark mark and general, audio, slide and video cues each in its own color, above a timer cue and the first lines of the script."),
+    "Speaker styles": ("read-speaker-styles.png", "The Speaker styles sheet with three speakers, each with a name, color swatches and a size, and a sample preview."),
+    "The reading marker": ("read-marker.png", "The Prompter tab showing the reading line setting, the marker shape tiles, the color swatch and size, and the bookmark color."),
+    "Margins and alignment": ("read-margins-alignment.png", "The Margins settings with left and right numbers, and the Text tab with the left, center and right alignment buttons."),
+    "Back up smoothly": ("read-backward.mp4", "The script scrolling forward, then backward, as the speed passes through zero."),
+    "The live bar": ("show-live-bar.png", "The full operator window with the live bar across the top: play, speed, zoom, the armed indicator, bookmarks and invert."),
+    "Command palette": ("show-palette.png", "The command palette open with find typed, listing four commands, each with its shortcut."),
+    "Organized controls": ("show-ribbon-timer.png", "The operator window with the Timer tab open in the ribbon beside the script."),
+    "Any display setup": ("show-display-checklist.png", "The Show tab with the Auto, Extended and Mirrored display buttons, beside the Before you go live checklist."),
+    "Script tools": ("docs-before-after.png", "A pasted script with speaker names and notes typed inline, next to the same passage cleaned up, with colored speakers and cues."),
+}
+
+
+def shot_media(title):
+    src, alt = SHOTS[title]
+    if src.endswith(".mp4"):
+        poster = src.replace(".mp4", "-poster.png")
+        return (f'<figure class="shotfig"><video autoplay loop muted playsinline controls preload="metadata" poster="assets/shots/{poster}" aria-label="{alt}">'
+                f'<source src="assets/shots/{src}" type="video/mp4"></video></figure>')
+    return f'<figure class="shotfig"><a href="assets/shots/{src}"><img src="assets/shots/{src}" alt="{alt}" loading="lazy"></a></figure>'
+
+
 def feat_block(f):
     title, head, copy, shot, status = f
     badge = '<span class="badge">Coming soon</span>' if status == "soon" else ""
-    media = ph("Capture: " + shot, 240) if (status == "live" and shot) else ""
+    media = (shot_media(title) if title in SHOTS else ph("Capture: " + shot, 240)) if (status == "live" and shot) else ""
     cls = "feat" if media else "feat feat-text"
     return (f'<article class="{cls}"><div><p class="eyebrow">{title}{badge}</p><h2>{head}</h2><p>{copy}</p></div>{media}</article>')
 
@@ -175,7 +204,7 @@ P["index.html"] = ("Cadence Prompt: teleprompter software for the whole show",
     "Teleprompter software built for the presenter, the operator and the crew.",
     hero("The prompter, rebuilt for the whole room.",
          "We keep putting up with the same prompter pain points because we assume they come with the job. They do not. Cadence Prompt gives operators a better interface, presenters a better read, and crews timers and cues in one place.") +
-    f'<section class="wrap shot">{ph("Capture: the full operator window, with a realistic script open, the live bar across the top, the ribbon at left, and the preview, timer card and Coming up in the side column. This is the hero image.", 420)}</section>'
+    f'<section class="wrap shot"><figure class="shotfig hero-shot"><a href="assets/shots/home-hero.png"><img src="assets/shots/home-hero.png" alt="The Cadence Prompt operator window: the live bar across the top, the ribbon at left, the script with colored speakers and cues, and the preview, timer card and Coming up in the side column."></a></figure></section>'
     '<section class="wrap live"><h2>You do not have to live with it.</h2><ul class="pains">'
     '<li>Hours of formatting a script by hand.</li><li>A whole new script arrives, and you start over.</li>'
     '<li>The crew asks how much longer, and nobody can say.</li><li>A clunky control, and a quiet "why did it do that?"</li></ul>'

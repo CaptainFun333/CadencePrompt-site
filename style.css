@@ -51,3 +51,7 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding-block:28px;color
 .pains{list-style:none;padding:0;margin:14px 0;display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
 .pains li{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 14px;color:var(--mute)}
 .built{margin:6px 0 0}.built a{color:var(--fg)}.prose h2{margin-top:26px}
+
+/* real screenshots */
+.shotfig{margin:0}.shotfig img,.shotfig video{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:8px;background:#0b0d10}.shotfig a{display:block}
+.hero-shot{max-width:1100px;margin-inline:auto}
