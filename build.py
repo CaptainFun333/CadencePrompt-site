@@ -175,7 +175,7 @@ SHOTS = {
     "The live bar": ("show-live-bar.png", "The full operator window with the live bar across the top: play, speed, zoom, the Armed indicator, bookmarks and page jumps."),
     "Command palette": ("show-palette.png", "The command palette open with find typed, listing the find commands, with their shortcuts."),
     "Organized controls": ("show-ribbon-timer.png", "The operator window with the Timer tab open at the left, beside the script, the preview and the timer card."),
-    "Any display setup": ("show-display-checklist.png", "The Show tab with the Auto, Extended and Mirrored display buttons, beside the Before you go live checklist."),
+    "Any display setup": ("show-display-checklist.png", "The Show tab with the Auto, Extended and Mirrored display buttons, the reading line and marker, and the Before you go live buttons, beside the Before you go live checklist."),
     "Import & Prep": ("prep-import-window.png", "The Import & Prep window with a raw client script pasted in: speaker names typed inline, notes in brackets and uneven spacing, with the steps Text, Prepare and Check along the top."),
     "Prepare script": ("prep-prepare-window.png", "The Prepare step of the Import & Prep window: six steps along the top, the step Clean up spacing with what it does, what to look at and its choices, and Apply and Next at the bottom."),
     "Bring in a new version": ("prep-new-version.png", "The Bring in a new version screen listing the client's changes, each marked Theirs or Same, with your script, the client's change and the result side by side."),
@@ -185,7 +185,7 @@ SHOTS = {
     "Print, PDF and Word": ("prep-print.png", "Page one of a printed script: speaker names above their lines, cues in boxes in print-safe colors, and the date and page number in the margins."),
     "Pull the script": ("time-pull-phone.png", "The pull page on a phone: the script now in the prompter with PDF, Word and Text buttons, and sections for a runlist and a crew folder."),
     "Never lose the script": ("show-checklist.png", "The Before you go live checklist: Do Not Disturb, notification settings, AirDrop and chat apps, each with a box to tick."),
-    "Script tools": ("docs-before-after.png", "A pasted script with speaker names and notes typed inline, next to the same passage cleaned up, with colored speakers and cues."),
+    "Script tools": ("docs-before-after.png", "A script pasted in as it arrived, with speaker names and notes typed inline, next to the same passage after Prepare, with colored speakers and cues."),
 }
 
 
@@ -244,7 +244,8 @@ P["index.html"] = ("Cadence Prompt: teleprompter software for the whole show",
     '<article><h3><a href="time-and-cues.html">Crews</a></h3><p>One show, one source of truth: timers, a live list of the cues coming up, and faster script handling that saves time and money.</p></article>'
     '</div></section>'
     '<section class="wrap prose"><h2>Run it with a Stream Deck.</h2><p>Cadence runs without a Stream Deck. It runs best with one. Keys for the tools you reach for, dials for speed, text size and bookmarks, a touch strip for the clock: your hands stay on the show. Any model works, the Stream Deck, XL, + and + XL, and the two with dials give you the full set. Every key and dial has a function key or a button that does the same thing.</p></section>'
-    '<section class="wrap prose"><h2>Learn it on the prompter.</h2><p>Cadence Prompt teaches itself. Two Welcome scripts come with the app: you read them on the prompter and try each feature at a practice stop, with a Help search and a built-in manual behind them.</p></section>'
+    '<section class="wrap prose"><h2>Learn it on the prompter.</h2><p>Cadence Prompt teaches itself. Two Welcome scripts come with the app: you read them on the prompter and try each feature at a practice stop, with a Help search and a built-in manual behind them.</p>'
+    '<figure class="shotfig"><img src="assets/shots/help-search.png" alt="Help search with cue sheet typed in: the matching commands, menu items and manual page, each with where to find it." loading="lazy"></figure></section>'
     f'<section class="wrap"><h2>What makes it different</h2><div class="cols">{pillar_cards}</div></section>'
     '<section class="wrap cta"><h2>Try it on your next show.</h2><p><a class="btn" href="download.html">' + CHEV + 'Download</a></p></section>')
 
