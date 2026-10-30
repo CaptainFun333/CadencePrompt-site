@@ -202,18 +202,22 @@ pillar_cards = "".join(
 
 P["index.html"] = ("Cadence Prompt: teleprompter software for the whole show",
     "Teleprompter software built for the presenter, the operator and the crew.",
-    hero("The prompter, rebuilt for the whole room.",
-         "We keep putting up with the same prompter pain points because we assume they come with the job. They do not. Cadence Prompt gives operators a better interface, presenters a better read, and crews timers and cues in one place.") +
+    hero("You do not have to live with it.",
+         "We keep putting up with the same prompter pain points because we assume they come with the job. They do not. Cadence Prompt is the prompter, rebuilt for the whole room: prep in minutes, run the show with your hands on it, and a crew that sees the same clock you do.") +
     f'<section class="wrap shot"><figure class="shotfig hero-shot"><a href="assets/shots/home-hero.png"><img src="assets/shots/home-hero.png" alt="The Cadence Prompt operator window: the live bar across the top, the ribbon at left, the script with colored speakers and cues, and the preview, timer card and Coming up in the side column."></a></figure></section>'
-    '<section class="wrap live"><h2>You do not have to live with it.</h2><ul class="pains">'
-    '<li>Hours of formatting a script by hand.</li><li>A whole new script arrives, and you start over.</li>'
-    '<li>The crew asks how much longer, and nobody can say.</li><li>A clunky control, and a quiet "why did it do that?"</li></ul>'
+    '<section class="wrap live"><h2>Sound familiar?</h2><ul class="pains">'
+    '<li>Hours of formatting a script by hand. <a href="documents-in-documents-out.html">Import &amp; Prep takes it from raw to prompter-ready.</a></li>'
+    '<li>A whole new script arrives, and you start over. <a href="documents-in-documents-out.html">Version two arrives at five o\'clock. Fine.</a></li>'
+    '<li>The crew asks how much longer, and nobody can say. <a href="time-and-cues.html">Now they can see it for themselves.</a></li>'
+    '<li>A clunky control, and a quiet "why did it do that?" <a href="run-the-show.html">Your hands on it.</a></li></ul>'
     '<p class="built">I built Cadence Prompt after years of working around the same bugs. <a href="about.html">Read why &rarr;</a></p></section>'
-    '<section class="wrap three"><h2>A win for everyone in the room</h2><div class="cols">'
-    '<article><h3><a href="run-the-show.html">Operators</a></h3><p>Be the operator the producer wants on every show: a clean interface built around the live bar, a command palette and Stream Deck control.</p></article>'
-    '<article><h3><a href="a-better-read.html">Presenters</a></h3><p>A better read: each speaker in their own style, a marker you can follow, and a clock you can trust.</p></article>'
-    '<article><h3><a href="time-and-cues.html">Production crews</a></h3><p>Integrated timers, a live list of the cues coming up, and faster script handling that saves time and money.</p></article>'
+    '<section class="wrap three"><h2>Three promises, one room</h2><div class="cols">'
+    '<article><h3><a href="run-the-show.html">Operators</a></h3><p>Prep in minutes. Run the show with your hands on it. A clean interface built around the live bar, a command palette and Stream Deck control.</p></article>'
+    '<article><h3><a href="a-better-read.html">Presenters</a></h3><p>Walk on knowing your words, your pace and your time: each speaker in their own style, a marker you can follow, and a clock you can trust.</p></article>'
+    '<article><h3><a href="time-and-cues.html">Crews</a></h3><p>One show, one source of truth: timers, a live list of the cues coming up, and faster script handling that saves time and money.</p></article>'
     '</div></section>'
+    '<section class="wrap prose"><h2>Run it with a Stream Deck.</h2><p>Cadence runs without a Stream Deck. It runs best with one. Keys for the tools you reach for, dials for speed, text size and bookmarks, a touch strip for the clock: your hands stay on the show. Any model works, the Stream Deck, XL, + and + XL, and the two with dials give you the full set. Every key and dial has a function key or a button that does the same thing.</p></section>'
+    '<section class="wrap prose"><h2>Learn it on the prompter.</h2><p>Cadence Prompt teaches itself. Two Welcome scripts come with the app: you read them on the prompter and try each feature at a practice stop, with a Help search and a built-in manual behind them.</p></section>'
     f'<section class="wrap"><h2>What makes it different</h2><div class="cols">{pillar_cards}</div></section>'
     '<section class="wrap cta"><h2>Try it on your next show.</h2><p><a class="btn" href="download.html">' + CHEV + 'Download</a></p></section>')
 
@@ -223,11 +227,10 @@ P["features.html"] = ("Features | Cadence Prompt", "What Cadence Prompt does dif
         f'<article class="feat feat-text"><div><p class="eyebrow">{p["audiences"]}</p><h2><a href="{p["slug"]}.html">{p["name"]}</a></h2><p>{p["lede"]}</p>'
         f'<p><a class="link0" href="{p["slug"]}.html">See {p["name"].lower()} &rarr;</a></p></div></article>' for p in PILLARS) + "</section>")
 
-P["download.html"] = ("Download | Cadence Prompt", "Download Cadence Prompt for Mac and Windows.",
-    hero("Download Cadence Prompt", "Try every feature free for [N days]. Then subscribe to keep going. [Price and trial length to decide.]", False) +
-    f'<section class="wrap cols dl"><article><h2>Mac</h2><p class="mono">macOS [min version] · [size]</p><p><a class="btn" href="#">{CHEV}Download .dmg</a></p><p class="note">Link goes to the latest release when builds exist.</p></article>'
-    f'<article><h2>Windows</h2><p class="mono">Windows [min version] · [size]</p><p><a class="btn" href="#">{CHEV}Download installer</a></p><p class="note">Installer format to decide.</p></article></section>'
-    '<section class="wrap prose"><h2>Install</h2><ol><li>[step]</li><li>[step]</li></ol><h2>System requirements</h2><p>[to write]</p><h2>Trial and pricing</h2><p>Every feature is in the trial. After it, a subscription keeps Cadence Prompt supported and improving, and I will always be clear about what it pays for. [Price and trial length to decide.]</p></section>')
+P["download.html"] = ("Get Cadence Prompt | Cadence Prompt", "Ask for a beta access code for Cadence Prompt.",
+    hero("Get Cadence Prompt", "Cadence Prompt is in beta, and a beta access code opens it. Ask for one and I will send it. [Price and trial length to decide.]", False) +
+    f'<section class="wrap cols dl"><article><h2>Ask for a beta code</h2><p>Tell me your name and what you run, and I will send a code and the installer.</p><p><a class="btn" href="mailto:CadencePrompt@gmail.com?subject=Cadence%20Prompt%20beta%20code">{CHEV}Request a beta code</a></p><p class="note">Codes work offline and last for the beta.</p></article></section>'
+    '<section class="wrap prose"><h2>What you need</h2><p>A Mac or a Windows computer. [Minimum versions to write.] A Stream Deck is not required: Cadence runs without one. It runs best with one.</p><h2>Trial and pricing</h2><p>Every feature is in the trial. After it, a subscription keeps Cadence Prompt supported and improving, and I will always be clear about what it pays for. [Price and trial length to decide.]</p></section>')
 P["help.html"] = ("Help | Cadence Prompt", "Get started and find answers.",
     hero("Help", "Start here. The full manual will grow from the in-app help.", False) +
     '<section class="wrap cols"><article><h3>Quick start</h3><p>[5 steps from script to show]</p></article><article><h3>Stream Deck</h3><p>[setup]</p></article><article><h3>Timers and cues</h3><p>[how they work]</p></article><article><h3>Keyboard shortcuts</h3><p>[the key map]</p></article></section>')
@@ -241,11 +244,21 @@ P["about.html"] = ("About | Cadence Prompt", "Why Cadence Prompt exists.",
     '<p>I have worked in live events for eighteen years. I started by cleaning the office of a neighbor who ran a teleprompter company, and I ended up running graphics and media servers on shows of every size. I still run prompter today.</p>'
     '<p>The software I used most was a great tool once. Over the years I learned its bugs by heart. I built shortcuts around them with a Stream Deck and a pile of macros. Then I caught myself building tools to make a broken tool work, and I decided to build the right tool instead.</p>'
     '<p>The first thing I fixed was coloring text. It took five clicks for every cue. Now it takes one. That is how Cadence Prompt started: one small, annoying thing, fixed for real.</p>'
-    '<h2>What I believe</h2>'
-    '<p>A prompter should help three people at once: the operator at the desk, the presenter on stage, and the crew who need to know what is coming. It should keep up with last-minute changes, tell the crew how much longer, and get out of the presenter\'s way. If it does its job, nobody notices it.</p>'
-    '<p>I am not trying to be the loudest tool in the room. I want to be the one that is there, every show, doing what I said it would.</p>'
+    '<h2>What I am here to do</h2>'
+    '<p>To make events better for presenters, operators and crews, so much better that none of them can imagine a show without the ease and connectedness Cadence Prompt brings.</p>'
+    '<p>I want a prompter as good for the crew behind the scenes as it is for the presenter on stage. If it does its job, nobody notices it. I am not trying to be the loudest tool in the room. I want to be the one that is there, every show, doing what I said it would.</p>'
+    '<h2>What I hold to</h2>'
+    '<ul class="values">'
+    '<li><strong>Accuracy before speed.</strong> A late change is only fast if it is right. Cadence shows you what changed and applies nothing silently.</li>'
+    '<li><strong>Calm in the live moment.</strong> The screen should never add to the pressure.</li>'
+    '<li><strong>Every seat in the room matters.</strong> The operator, the presenter and the crew each get something built for them.</li>'
+    '<li><strong>Honest by default.</strong> If it is not built, it says coming soon. If it is a claim, it is checked.</li>'
+    '<li><strong>A quiet interface and a confident voice.</strong> The software stays calm so color means something, and the words say plainly what it does.</li>'
+    '<li><strong>Built from real shows.</strong> Every feature starts with a problem someone lived.</li>'
+    '<li><strong>Solve what you thought you had to live with.</strong> Add value without being asked.</li>'
+    '<li><strong>Over-prepared, never upset.</strong> The client may arrive unprepared. The crew does not.</li></ul>'
     '<h2>What I will do for you</h2>'
-    '<p>Tell me what is working and what needs fixing. I will fix it.</p></section>')
+    '<p>Tell me what is working and what needs fixing. I will fix it. Share your wins too: they tell me what to protect.</p></section>')
 P["privacy.html"] = ("Privacy | Cadence Prompt", "Privacy policy.", hero("Privacy", "[Policy to write before launch.]", False))
 P["terms.html"] = ("Terms | Cadence Prompt", "Terms of use.", hero("Terms", "[Terms to write before launch.]", False))
 
