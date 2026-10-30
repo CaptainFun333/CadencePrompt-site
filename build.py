@@ -51,6 +51,9 @@ PILLARS = [
             ('Import & Prep', 'Raw script in, prompter-ready out.',
              'Bring in Word, PowerPoint or Keynote notes, PDF, Pages, Google Docs and Slides, or a shared folder on Drive, Dropbox, OneDrive or Box. One click finds the speakers, colors the stage directions and sweeps for cues, and one undo takes the whole run back. A script is ready to rehearse in a fraction of the time.',
              '', 'live'),
+            ('Prepare script', 'One click, one undo.',
+             'Prepare walks a script through six steps: set aside the production lines, clean up the spacing, find the speakers, color the stage directions and sweep for cues. Apply the sure ones all at once or look at each. Client profiles remember your choices for each client, and one undo takes the whole run back.',
+             '', 'live'),
             ('Bring in a new version', 'The late rewrite stops costing a re-format.',
              'The client keeps editing their own document. When the new version arrives, Cadence shows what they changed, what you changed and what you both did, and your own edits survive. Nothing is applied silently, and Versions keeps every one and can put an earlier one back.',
              '', 'live'),
@@ -160,12 +163,12 @@ PILLARS = [
 # Real screenshots, by feature title: (file in assets/shots, alt text). A feature with no entry keeps its placeholder.
 # All were captured from the app with a fictional sample script; see docs/screenshots in the Cadence repo.
 SHOTS = {
-    "Speaker timer": ("time-speaker-timer.png", "The speaker timer page: the time remaining as a large clock on the right, and on the left the real time, an estimate of 11 seconds under time, Coming up and the pace."),
+    "Speaker timer": ("time-speaker-timer.png", "The speaker timer page: the time remaining as a large clock on the right with the next segment, and on the left the real time, Coming up with the time to each cue, and the pace."),
     "Coming up": ("time-coming-up.png", "Coming up in the operator window: audio, video and general cues, then the CEO keynote timer set and its slides, each with its kind, name and the time until it."),
     "Timer cues in the script": ("time-timer-cues.png", "The live bar indicator reading Armed 5 in green and OFF 5 in red, and below it the timer card with a stopped green clock after a segment finished early."),
-    "Share the speaker timer": ("time-share.png", "The Share on the network panel with its addresses and viewer count, next to the speaker timer page open in a browser."),
+    "Share the speaker timer": ("time-share.png", "The Network tab with Share on the network and the View and Edit PINs, next to the speaker timer page it shares."),
     "Cue colors": ("time-cue-colors.png", "The script editor with a bookmark mark and general, audio, slide and video cues each in its own color, above a timer cue and the first lines of the script."),
-    "Speaker styles": ("read-speaker-styles.png", "The Speaker styles sheet with three speakers, each with a name, color swatches and a size, and a sample preview."),
+    "Speaker styles": ("read-speaker-styles.png", "The Speakers sheet: each speaker with a name, color, size, alignment and spacing, the collection they belong to, and a sample at each speaker's color."),
     "The reading marker": ("read-marker.png", "The Prompter tab showing the reading line setting, the marker shape tiles, the color swatch and size, and the bookmark color."),
     "Margins and alignment": ("read-margins-alignment.png", "The Prompter tab with the text size, line spacing, the Normal and Custom margins with left and right numbers, and the settings new scripts start with."),
     "Back up smoothly": ("read-backward.mp4", "The script scrolling forward, then backward, as the speed passes through zero."),
@@ -173,6 +176,12 @@ SHOTS = {
     "Command palette": ("show-palette.png", "The command palette open with find typed, listing the find commands, with their shortcuts."),
     "Organized controls": ("show-ribbon-timer.png", "The operator window with the Timer tab open at the left, beside the script, the preview and the timer card."),
     "Any display setup": ("show-display-checklist.png", "The Show tab with the Auto, Extended and Mirrored display buttons, beside the Before you go live checklist."),
+    "Import & Prep": ("prep-import-window.png", "The Import & Prep window with a raw client script pasted in: speaker names typed inline, notes in brackets and uneven spacing, with the steps Text, Prepare and Check along the top."),
+    "Prepare script": ("prep-prepare-window.png", "The Prepare step of the Import & Prep window: six steps along the top, the step Clean up spacing with what it does, what to look at and its choices, and Apply and Next at the bottom."),
+    "Bring in a new version": ("prep-new-version.png", "The Bring in a new version screen listing the client's changes, each marked Theirs or Same, with your script, the client's change and the result side by side."),
+    "Pictures in the script": ("prep-pictures.png", "A slide's picture on a line of its own in the script, with the words of the script above and below it."),
+    "Pronunciation helper": ("read-pronunciations.png", "The Pronunciations dialog."),
+    "The cue sheet": ("time-cue-sheet.png", "The cue sheet: every cue of the script as a row with its planned time, kind and name, tick boxes, and segments with the pace they need."),
     "Script tools": ("docs-before-after.png", "A pasted script with speaker names and notes typed inline, next to the same passage cleaned up, with colored speakers and cues."),
 }
 
