@@ -165,11 +165,11 @@ PILLARS = [
 SHOTS = {
     "Speaker timer": ("time-speaker-timer.png", "The speaker timer page: the time remaining as a large clock on the right with the next segment, and on the left the real time, Coming up with the time to each cue, and the pace."),
     "Coming up": ("time-coming-up.png", "Coming up in the operator window: audio, video and general cues, then the CEO keynote timer set and its slides, each with its kind, name and the time until it."),
-    "Timer cues in the script": ("time-timer-cues.png", "The live bar indicator reading Armed 5 in green and OFF 5 in red, and below it the timer card with a stopped green clock after a segment finished early."),
+    "Timer cues in the script": ("time-timer-cues.png", "The live bar indicator reading Armed in green, and the same indicator reading OFF in red when the cues are disarmed."),
     "Share the speaker timer": ("time-share.png", "The Network tab with Share on the network and the View and Edit PINs, next to the speaker timer page it shares."),
     "Cue colors": ("time-cue-colors.png", "The script editor with a bookmark mark and general, audio, slide and video cues each in its own color, above a timer cue and the first lines of the script."),
     "Speaker styles": ("read-speaker-styles.png", "The Speakers sheet: each speaker with a name, color, size, alignment and spacing, the collection they belong to, and a sample at each speaker's color."),
-    "The reading marker": ("read-marker.png", "The Prompter tab showing the reading line setting, the marker shape tiles, the color swatch and size, and the bookmark color."),
+    "The reading marker": ("read-marker.png", "The Marker group of the Show tab: the marker shapes, its side, its color, its size and the bookmark color."),
     "Margins and alignment": ("read-margins-alignment.png", "The Prompter tab with the text size, line spacing, the Normal and Custom margins with left and right numbers, and the settings new scripts start with."),
     "Back up smoothly": ("read-backward.mp4", "The script scrolling forward, then backward, as the speed passes through zero."),
     "The live bar": ("show-live-bar.png", "The full operator window with the live bar across the top: play, speed, zoom, the Armed indicator, bookmarks and page jumps."),
@@ -182,6 +182,9 @@ SHOTS = {
     "Pictures in the script": ("prep-pictures.png", "A slide's picture on a line of its own in the script, with the words of the script above and below it."),
     "Pronunciation helper": ("read-pronunciations.png", "The Pronunciations dialog."),
     "The cue sheet": ("time-cue-sheet.png", "The cue sheet: every cue of the script as a row with its planned time, kind and name, tick boxes, and segments with the pace they need."),
+    "Print, PDF and Word": ("prep-print.png", "Page one of a printed script: speaker names above their lines, cues in boxes in print-safe colors, and the date and page number in the margins."),
+    "Pull the script": ("time-pull-phone.png", "The pull page on a phone: the script now in the prompter with PDF, Word and Text buttons, and sections for a runlist and a crew folder."),
+    "Never lose the script": ("show-checklist.png", "The Before you go live checklist: Do Not Disturb, notification settings, AirDrop and chat apps, each with a box to tick."),
     "Script tools": ("docs-before-after.png", "A pasted script with speaker names and notes typed inline, next to the same passage cleaned up, with colored speakers and cues."),
 }
 
