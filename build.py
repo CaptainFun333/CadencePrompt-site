@@ -265,7 +265,7 @@ P["help.html"] = ("Help | Cadence Prompt", "Get started and find answers.",
 P["changelog.html"] = ("Changelog | Cadence Prompt", "What changed in each version.",
     hero("Changelog", "Every release, in plain language.", False) + '<section class="wrap prose"><h2>[version] · [date]</h2><ul><li>[note]</li></ul><p class="note">Generated from the app changelog at release time.</p></section>')
 P["support.html"] = ("Support | Cadence Prompt", "Contact and support.",
-    hero("Support", "Tell us what you ran into.", False) + '<section class="wrap prose"><p>Email <a href="mailto:CadencePrompt@gmail.com">CadencePrompt@gmail.com</a>. Include your version and what you were doing.</p><p>Tell me what is working and what needs fixing. If it needs fixing, I will fix it. Share your wins too: they tell me what to protect.</p><p class="note">Move to support@cadenceprompt.com once domain email is set up.</p></section>')
+    hero("Support", "Tell us what you ran into.", False) + '<section class="wrap prose"><p>Email <a href="mailto:CadencePrompt@gmail.com">CadencePrompt@gmail.com</a>. Include your version and what you were doing.</p><p>Tell me what is working and what needs fixing. If it needs fixing, Ready to make it right. Share your wins too: they tell me what to protect.</p><p class="note">Move to support@cadenceprompt.com once domain email is set up.</p></section>')
 P["about.html"] = ("About | Cadence Prompt", "Why Cadence Prompt exists.",
     hero("Why I built Cadence Prompt", "Eighteen years of shows, and one tool I kept working around.", False) +
     '<section class="wrap prose"><p class="note">Draft in Brad\'s voice, built from the founder survey. To rewrite in his own words before it goes live.</p>'
@@ -278,15 +278,13 @@ P["about.html"] = ("About | Cadence Prompt", "Why Cadence Prompt exists.",
     '<h2>What I hold to</h2>'
     '<ul class="values">'
     '<li><strong>Accuracy before speed.</strong> A late change is only fast if it is right. Cadence shows you what changed and applies nothing silently.</li>'
-    '<li><strong>Calm in the live moment.</strong> The screen should never add to the pressure.</li>'
+    '<li><strong>Calm in the moment.</strong> The screen should never add to the pressure.</li>'
     '<li><strong>Every seat in the room matters.</strong> The operator, the presenter and the crew each get something built for them.</li>'
     '<li><strong>Honest by default.</strong> If it is not built, it says coming soon. If it is a claim, it is checked.</li>'
-    '<li><strong>A quiet interface and a confident voice.</strong> The software stays calm so color means something, and the words say plainly what it does.</li>'
     '<li><strong>Built from real shows.</strong> Every feature starts with a problem someone lived.</li>'
-    '<li><strong>Solve what you thought you had to live with.</strong> Add value without being asked.</li>'
-    '<li><strong>Over-prepared, never upset.</strong> The client may arrive unprepared. The crew does not.</li></ul>'
+    '<li><strong>Solve what you thought you had to live with.</strong> Add value without being asked.</li></ul>'
     '<h2>What I will do for you</h2>'
-    '<p>Tell me what is working and what needs fixing. I will fix it. Share your wins too: they tell me what to protect.</p></section>')
+    '<p>Tell me what is working and what needs fixing. Ready to make it right. Share your wins too: they tell me what to protect.</p></section>')
 P["privacy.html"] = ("Privacy | Cadence Prompt", "Privacy policy.", hero("Privacy", "[Policy to write before launch.]", False))
 P["terms.html"] = ("Terms | Cadence Prompt", "Terms of use.", hero("Terms", "[Terms to write before launch.]", False))
 
