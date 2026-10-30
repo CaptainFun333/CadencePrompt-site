@@ -198,7 +198,7 @@ def shot_media(title):
 def feat_block(f):
     title, head, copy, shot, status = f
     badge = '<span class="badge">Coming soon</span>' if status == "soon" else ""
-    media = (shot_media(title) if title in SHOTS else ph("Capture: " + shot, 240)) if (status == "live" and shot) else ""
+    media = (shot_media(title) if title in SHOTS else (ph("Capture: " + shot, 240) if shot else "")) if status == "live" else ""
     cls = "feat" if media else "feat feat-text"
     return (f'<article class="{cls}"><div><p class="eyebrow">{title}{badge}</p><h2>{head}</h2><p>{copy}</p></div>{media}</article>')
 
