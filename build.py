@@ -238,7 +238,7 @@ P["support.html"] = ("Support | Cadence Prompt", "Contact and support.",
 P["about.html"] = ("About | Cadence Prompt", "Why Cadence Prompt exists.",
     hero("Why I built Cadence Prompt", "Eighteen years of shows, and one tool I kept working around.", False) +
     '<section class="wrap prose"><p class="note">Draft in Brad\'s voice, built from the founder survey. To rewrite in his own words before it goes live.</p>'
-    '<p>I have worked in live events for eighteen years. I started by cleaning the office of a neighbor who ran a teleprompter company, and I ended up running prompters, graphics and media servers on shows of every size. Today I run prompter full time.</p>'
+    '<p>I have worked in live events for eighteen years. I started by cleaning the office of a neighbor who ran a teleprompter company, and I ended up running graphics and media servers on shows of every size. I still run prompter today.</p>'
     '<p>The software I used most was a great tool once. Over the years I learned its bugs by heart. I built shortcuts around them with a Stream Deck and a pile of macros. Then I caught myself building tools to make a broken tool work, and I decided to build the right tool instead.</p>'
     '<p>The first thing I fixed was coloring text. It took five clicks for every cue. Now it takes one. That is how Cadence Prompt started: one small, annoying thing, fixed for real.</p>'
     '<h2>What I believe</h2>'
