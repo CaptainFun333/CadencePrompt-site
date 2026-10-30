@@ -161,17 +161,17 @@ PILLARS = [
 # All were captured from the app with a fictional sample script; see docs/screenshots in the Cadence repo.
 SHOTS = {
     "Speaker timer": ("time-speaker-timer.png", "The speaker timer page: the time remaining as a large clock on the right, and on the left the real time, an estimate of 11 seconds under time, Coming up and the pace."),
-    "Coming up": ("time-coming-up.png", "Coming up in the operator window: eight cues ahead of the reading line, each with its kind, name and the time until it."),
+    "Coming up": ("time-coming-up.png", "Coming up in the operator window: audio, video and general cues, then the CEO keynote timer set and its slides, each with its kind, name and the time until it."),
     "Timer cues in the script": ("time-timer-cues.png", "The live bar indicator reading Armed 5 in green and OFF 5 in red, and below it the timer card with a stopped green clock after a segment finished early."),
     "Share the speaker timer": ("time-share.png", "The Share on the network panel with its addresses and viewer count, next to the speaker timer page open in a browser."),
     "Cue colors": ("time-cue-colors.png", "The script editor with a bookmark mark and general, audio, slide and video cues each in its own color, above a timer cue and the first lines of the script."),
     "Speaker styles": ("read-speaker-styles.png", "The Speaker styles sheet with three speakers, each with a name, color swatches and a size, and a sample preview."),
     "The reading marker": ("read-marker.png", "The Prompter tab showing the reading line setting, the marker shape tiles, the color swatch and size, and the bookmark color."),
-    "Margins and alignment": ("read-margins-alignment.png", "The Margins settings with left and right numbers, and the Text tab with the left, center and right alignment buttons."),
+    "Margins and alignment": ("read-margins-alignment.png", "The Prompter tab with the text size, line spacing, the Normal and Custom margins with left and right numbers, and the settings new scripts start with."),
     "Back up smoothly": ("read-backward.mp4", "The script scrolling forward, then backward, as the speed passes through zero."),
-    "The live bar": ("show-live-bar.png", "The full operator window with the live bar across the top: play, speed, zoom, the armed indicator, bookmarks and invert."),
-    "Command palette": ("show-palette.png", "The command palette open with find typed, listing four commands, each with its shortcut."),
-    "Organized controls": ("show-ribbon-timer.png", "The operator window with the Timer tab open in the ribbon beside the script."),
+    "The live bar": ("show-live-bar.png", "The full operator window with the live bar across the top: play, speed, zoom, the Armed indicator, bookmarks and page jumps."),
+    "Command palette": ("show-palette.png", "The command palette open with find typed, listing the find commands, with their shortcuts."),
+    "Organized controls": ("show-ribbon-timer.png", "The operator window with the Timer tab open at the left, beside the script, the preview and the timer card."),
     "Any display setup": ("show-display-checklist.png", "The Show tab with the Auto, Extended and Mirrored display buttons, beside the Before you go live checklist."),
     "Script tools": ("docs-before-after.png", "A pasted script with speaker names and notes typed inline, next to the same passage cleaned up, with colored speakers and cues."),
 }
