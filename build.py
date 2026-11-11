@@ -286,7 +286,38 @@ P["about.html"] = ("About | Cadence Prompt", "Why Cadence Prompt exists.",
     '<li><strong>Solve what you thought you had to live with.</strong> Add value without being asked.</li></ul>'
     '<h2>What I will do for you</h2>'
     '<p>Tell me what is working and what needs fixing. Ready to make it right. Share your wins too: they tell me what to protect.</p></section>')
-P["privacy.html"] = ("Privacy | Cadence Prompt", "Privacy policy.", hero("Privacy", "[Policy to write before launch.]", False))
+P["privacy.html"] = ("Privacy | Cadence Prompt", "What Cadence Prompt keeps, what leaves your computer, and what the optional Anywhere service handles.", hero("Privacy", "Cadence Prompt works on your computer. Nothing leaves it unless you switch something on. Last updated 11 November 2026.", False) + """<section class="wrap prose">
+<h2>The app on your computer</h2>
+<p>Your scripts, run sheets, pictures, settings and cue lists stay on your computer. Cadence Prompt does not send usage statistics, and an access code is checked on your computer, without contacting anyone.</p>
+<p>Two things reach the internet only when you ask. If you import from a Google Docs or Drive link, Cadence fetches that link from Google. If you switch on Anywhere (below), the show goes through the online service.</p>
+<h2>Sharing on the venue network</h2>
+<p>When you switch on sharing, other devices on the same network can open the crew pages from your computer. That traffic stays on the local network and does not go through any service of mine.</p>
+<h2>Anywhere (optional)</h2>
+<p>Anywhere lets people who are not on the venue network open the crew pages (the clocks and, if you choose, the script) from a link or QR code. It is off every time Cadence starts. Nothing goes anywhere until you switch it on.</p>
+<h3>What passes through the service</h3>
+<ul>
+<li>While someone is watching from outside: the timer clocks and segment names. The script text and the place you are reading go through only if Share the script text is on.</li>
+<li>From viewers: ticks and notes on the cue sheet (with the Edit PIN), and suggestions on lines (with the Notes or Edit PIN).</li>
+<li>PINs are kept only as salted hashes. The service cannot tell you a PIN and cannot recover one.</li>
+<li>For each access code and month, the service keeps only counts: shows opened, viewers let in, and minutes. It keeps no content, no names, and no addresses of viewers.</li>
+</ul>
+<h3>What is not kept</h3>
+<ul>
+<li>The show is removed when you switch Anywhere off or quit Cadence, and by an automatic clean-up within a few minutes if Cadence goes quiet. The clock data is removed as soon as the last outside viewer leaves.</li>
+<li>I do not log or read the content. While a show runs it is held by Google's Firebase (Realtime Database and Cloud Functions, in the United States), under Google's own terms. The service passes through Google's servers.</li>
+</ul>
+<h3>What you are responsible for</h3>
+<ul>
+<li>You decide what to share and with whom. Share the link and PINs only with your crew. Anyone who has the link and a PIN can see what that PIN allows, until you switch Anywhere off.</li>
+<li>Four-digit PINs are a convenience, not strong security. After eight wrong guesses in five minutes a show refuses further guesses for the rest of that window, and a show lets in 15 viewers at once. Do not put secrets in a script you share this way.</li>
+<li>Anywhere is provided as is. It can be unavailable, and sharing on the venue network keeps working without it.</li>
+<li>An access code may be refused for misuse, or when the online services included with it have ended. The app itself keeps working.</li>
+</ul>
+<h2>This website</h2>
+<p>This site is hosted on GitHub Pages, which may keep ordinary server logs of visits. It loads its fonts from Google Fonts. It has no analytics and sets no cookies of its own.</p>
+<h2>Questions</h2>
+<p>Write to <a href="mailto:CadencePrompt@gmail.com">CadencePrompt@gmail.com</a> with a question or a request to remove something.</p>
+</section>""")
 P["terms.html"] = ("Terms | Cadence Prompt", "Terms of use.", hero("Terms", "[Terms to write before launch.]", False))
 
 # pillar pages highlight "Features" in the nav
