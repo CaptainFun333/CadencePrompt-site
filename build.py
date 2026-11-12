@@ -303,7 +303,6 @@ P["changelog.html"] = ("Changelog | Cadence Prompt", "What changed in each versi
     '<li>Snap to stanza (Beta): a line, or a whole style, can snap, so the page keys stop at stanzas; a stanza taller than the display gets page stops of its own, and Cadence offers to find the best page breaks.</li>'
     '<li>Viewer pages (Beta): the Timer, Cue sheet and Script pages share one navigation, with a phone layout and separate View and Edit PINs.</li>'
     '<li>NDI Prompter picture (Beta): Opaque, Transparent or Green background, with an outline, for a keyer. The prompter display has a Green background too.</li>'
-    '<li>Crawl look (Beta): a tilted crawl with its own panel.</li>'
     '<li>A key struck twice inside 0.3 seconds now does its job once, for the page keys, cue to cue and bookmarks.</li>'
     '<li>Drawers: the Prompter drawer has folds that remember if they are open, and Network is split into NDI and Collaboration. Help search now points at the control it finds.</li>'
     '<li>The Stream Deck page has shorter key captions, new VIEW MARKS, VIEW CUES and SNAP keys and a Coming up dial.</li>'
