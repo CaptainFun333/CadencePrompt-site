@@ -60,3 +60,13 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding-block:28px;color
 /* list text sits on the content column, against the reading-line chevron; the bullets hang in the page gutter */
 main ul:not(.pains){padding-left:0;margin-left:0;list-style-position:outside}
 main ul:not(.pains) li{margin-left:0}
+
+/* phones: logo and Download on one row, the links wrapped across the next, and the header scrolls away instead of covering the screen */
+@media(max-width:700px){
+.top{position:static}
+.bar{gap:6px 12px;padding-block:10px}
+.logo{order:1}.logo img{height:24px}
+.btn.small{order:2;margin-left:auto;padding:7px 12px;font-size:13px}
+nav{order:3;flex:0 0 100%;margin-inline:-8px}
+nav a{padding:6px 8px;font-size:14px}
+}
