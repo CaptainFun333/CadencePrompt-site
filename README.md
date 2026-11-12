@@ -8,3 +8,6 @@ Static site for cadenceprompt.com. No build step for hosting: GitHub Pages serve
 
 ## Hosting
 Enable GitHub Pages (Settings, Pages, deploy from `main` / root). At GoDaddy keep the domain, and set DNS: four `A` records for `@` to GitHub Pages' IPs and a `CNAME` for `www` to `<account>.github.io`. Confirm the current IPs in GitHub's Pages documentation.
+
+## The manual
+`manual.html` is the app's offline manual with a link back to the site. To refresh it: `npm run manual` in the Cadence repo, then `python3 refresh-manual.py` here.

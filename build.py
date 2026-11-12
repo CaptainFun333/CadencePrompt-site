@@ -289,9 +289,12 @@ P["download.html"] = ("Get Cadence Prompt | Cadence Prompt", "Ask for a beta acc
     f'<section class="wrap cols dl"><article><h2>Ask for a beta code</h2><p>Tell me your name and what you run, and I will send a code and the installer.</p><p><a class="btn" href="mailto:CadencePrompt@gmail.com?subject=Cadence%20Prompt%20beta%20code">{CHEV}Request a beta code</a></p><p class="note">Codes work offline and last for the beta.</p></article>'
     '<article><h2>Download the beta</h2><p>Get the installer for your computer, then ask for a code to open it.</p><ul><li><a href="https://github.com/CaptainFun333/CadencePrompt-site/releases/download/beta-0.1.2/Cadence-Prompt-0.1.2-Mac-Apple-Silicon.dmg">Mac, Apple Silicon (M1 and later)</a></li><li><a href="https://github.com/CaptainFun333/CadencePrompt-site/releases/download/beta-0.1.2/Cadence-Prompt-0.1.2-Mac-Intel.dmg">Mac, Intel</a></li><li><a href="https://github.com/CaptainFun333/CadencePrompt-site/releases/download/beta-0.1.2/Cadence-Prompt-0.1.2-Windows-Setup.exe">Windows</a></li></ul><p class="note">The beta installers are not signed yet, so your computer will warn you. On a Mac, right-click the app and choose Open the first time. On Windows, choose More info, then Run anyway.</p></article></section>'
     '<section class="wrap prose"><h2>What you need</h2><p>A Mac or a Windows computer. [Minimum versions to write.] A Stream Deck is not required: Cadence runs without one. It runs best with one.</p><h2>Trial and pricing</h2><p>Every feature is in the trial. After it, a subscription keeps Cadence Prompt supported and improving, and I will always be clear about what it pays for. [Price and trial length to decide.]</p></section>')
-P["help.html"] = ("Help | Cadence Prompt", "Get started and find answers.",
-    hero("Help", "Start here. The full manual will grow from the in-app help.", False) +
-    '<section class="wrap cols"><article><h3>Quick start</h3><p>[5 steps from script to show]</p></article><article><h3>Stream Deck</h3><p>[setup]</p></article><article><h3>Timers and cues</h3><p>[how they work]</p></article><article><h3>Keyboard shortcuts</h3><p>[the key map]</p></article></section>')
+P["help.html"] = ("Help | Cadence Prompt", "Read the Cadence Prompt manual and find answers.",
+    hero("Help", "Start with the manual, or learn it on the prompter with the Welcome scripts that come with the app.", False) +
+    '<section class="wrap cols"><article><h3>The manual</h3><p>The same manual that is in the app, with a search box: the Welcome scripts, Edit view and Prompt view, the Runlist, the Speaker timer, the Cue sheet, NDI pictures and Snap to stanza.</p><p><a class="btn" href="manual.html">' + CHEV + 'Read the manual</a></p></article>'
+    '<article><h3>In the app</h3><p>Press Command-Shift-/ (Control-Shift-/ on Windows) and type what you want. Help search shows where it lives and its shortcut. The two Welcome scripts teach each feature at a practice stop.</p></article>'
+    '<article><h3>Still stuck?</h3><p>Write to <a href="mailto:CadencePrompt@gmail.com">CadencePrompt@gmail.com</a>, or use Help, then Report a Problem or Request a Feature, in a beta build. <a href="support.html">Support</a></p></article></section>'
+    '<section class="wrap"><p class="note">The manual follows the newest beta build, so a few pages describe features marked Beta on the feature pages. NDI is Mac first.</p></section>')
 P["changelog.html"] = ("Changelog | Cadence Prompt", "What changed in each version.",
     hero("Changelog", "Every release, in plain language.", False) + '<section class="wrap prose">'
     '<h2>0.1.2 · November 11, 2026</h2><ul>'
@@ -371,6 +374,6 @@ for fn, (t, d, b) in P.items():
 open("CNAME", "w").write("cadenceprompt.com\n")
 open("robots.txt", "w").write(f"User-agent: *\nAllow: /\nSitemap: {SITE}sitemap.xml\n")
 open(".nojekyll", "w").write("")
-urls = "".join(f"<url><loc>{SITE}{'' if fn == 'index.html' else fn}</loc></url>" for fn in sorted(P))
+urls = "".join(f"<url><loc>{SITE}{'' if fn == 'index.html' else fn}</loc></url>" for fn in sorted(list(P) + ["manual.html"]))
 open("sitemap.xml", "w").write(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{urls}</urlset>\n')
 print(len(P), "pages")
