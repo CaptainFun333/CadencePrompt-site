@@ -293,7 +293,12 @@ P["help.html"] = ("Help | Cadence Prompt", "Get started and find answers.",
     hero("Help", "Start here. The full manual will grow from the in-app help.", False) +
     '<section class="wrap cols"><article><h3>Quick start</h3><p>[5 steps from script to show]</p></article><article><h3>Stream Deck</h3><p>[setup]</p></article><article><h3>Timers and cues</h3><p>[how they work]</p></article><article><h3>Keyboard shortcuts</h3><p>[the key map]</p></article></section>')
 P["changelog.html"] = ("Changelog | Cadence Prompt", "What changed in each version.",
-    hero("Changelog", "Every release, in plain language.", False) + '<section class="wrap prose"><h2>[version] · [date]</h2><ul><li>[note]</li></ul><p class="note">Generated from the app changelog at release time.</p></section>')
+    hero("Changelog", "Every release, in plain language.", False) + '<section class="wrap prose">'
+    '<h2>0.1.1 · October 31, 2026</h2><ul>'
+    '<li>Help, then Report a Problem or Request a Feature, gathers what you tell it with your app and computer details, a fixed list of settings and script sizes, to copy or save as a file. It is in beta builds only.</li>'
+    '<li>Mark That Moment (Command-Option-J, or Control-Alt-J on Windows) stamps a short record kept in memory, so a report can show when the scroll jumped. Nothing is written to disk.</li></ul>'
+    '<h2>0.1.0 · October 30, 2026</h2><ul><li>The first beta, for Mac (Apple Silicon and Intel) and Windows: Import &amp; Prep, the live bar, runlists, timer cues, the speaker timer and crew pages, Stream Deck control and the presenter settings described on the feature pages.</li></ul>'
+    '<p class="note">New beta builds are listed here the day they go out.</p></section>')
 P["support.html"] = ("Support | Cadence Prompt", "Contact and support.",
     hero("Support", "Tell us what you ran into.", False) + '<section class="wrap prose"><p>Email <a href="mailto:CadencePrompt@gmail.com">CadencePrompt@gmail.com</a>. Include your version and what you were doing.</p><p>Tell me what is working and what needs fixing. If it needs fixing, Ready to make it right. Share your wins too: they tell me what to protect.</p><p class="note">Move to support@cadenceprompt.com once domain email is set up.</p></section>')
 P["about.html"] = ("About | Cadence Prompt", "Why Cadence Prompt exists.",
