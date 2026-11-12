@@ -41,6 +41,7 @@ def hero(h, sub, cta=True, eyebrow=""):
 # ---- the four pillars ------------------------------------------------------
 # Each feature: (title, headline, copy, shot-description, status) with status "live" or "soon".
 # "soon" features are shown with a Coming soon badge and no screenshot.
+# "beta" features are built but not yet tried by hand: a Beta badge, no screenshot yet.
 PILLARS = [
     dict(
         slug='prep', name='Prep', audiences='Operator · Crew',
@@ -60,6 +61,12 @@ PILLARS = [
             ('Pictures in the script', "A slide's picture, beside its cue.",
              "Drop a picture into a line or onto a line of its own, and it scrolls with the words. Slide pictures from a folder put each slide's picture beside its cue, so the operator and the crew see what is on screen. Pictures carry through to Word and PDF.",
              '', 'live'),
+            ('Two-language scripts', 'English beside Portuguese, one click to choose.',
+             'Cadence reads a Word table with one language in each column and asks which to bring in, or makes one script of both. Slide pictures in a column beside the words can become Slide-cue pictures.',
+             '', 'beta'),
+            ('Master script', 'Several scripts, one document.',
+             'Stitch the scripts for an event into one, with a segment cue and a named bookmark for each. The operator numbers them in the runlist, and the crew tap the rows they want on the pull page and get one PDF, Word or text master.',
+             '', 'beta'),
             ('Script tools', 'Clean up a script in minutes.',
              'Convert paragraphs, strip to plain text, and find and replace across the script, while your styles and cues stay untouched.',
              'A before-and-after of a pasted script: raw text on the left, clean styled script with cues on the right.', 'live'),
@@ -94,6 +101,15 @@ PILLARS = [
             ('Bookmarks', 'Hop to a place, and back up smoothly.',
              'Drop a bookmark at the cursor, hop between them, and see the whole list. If a presenter repeats a line, the speed passes through zero and the script scrolls backward without a jump.',
              '', 'live'),
+            ('Phone remote', 'Play, pause and speed from a phone.',
+             'Turn the phone remote on, give it a PIN and scan its QR code. Play, pause, speed, rewind and fast forward work from the phone on the venue network, and the phone keeps its screen on.',
+             '', 'beta'),
+            ('Cue to cue', 'Jump to the previous or next cue.',
+             'Q2Q steps to the previous or next cue of the kinds a script chooses, slides and videos to start with, so a rehearsal can go cue to cue without scrolling.',
+             '', 'beta'),
+            ('NDI output', 'The prompter and the timer as NDI sources.',
+             'Send the prompter picture and the timer to other equipment on the network as NDI sources, with a transparent or green background for a keyer and a Check this machine test. Mac first; Windows is not tried yet.',
+             '', 'beta'),
             ('Never lose the script', 'A crash does not cost you the show.',
              'Cadence autosaves as you type to a recovery file, keeps a Backups folder, and keeps every version you bring in. Before you go live, a checklist walks through do not disturb, notifications and power.',
              '', 'live'),
@@ -116,6 +132,12 @@ PILLARS = [
             ('Share the speaker timer', 'Put the clock on any screen.',
              'Switch on sharing and Cadence lists an address for each network you are on. Crew on the same venue network open it in a browser, with no extra cables or software. The Time remaining half is a clean clock that other systems can use.',
              'The Share on the network switch with the listed addresses and viewer count, next to the timer page open in a browser window.', 'live'),
+            ('Clock colors', 'A timer that shows its state at a glance.',
+             'Five states, Running, Warning, Over time, Paused and Finished early, each get a color you choose, saved with the script. The timer and the time of day share the same style.',
+             '', 'beta'),
+            ('Crew script view', 'The script on any crew browser, with a way to suggest.',
+             'Crew on the venue network open the script in its own colors, following the reading line, with larger or smaller text and a Notes PIN. A Suggest box lets them tap a line or select words and send a note, which arrives in the operator\'s Prepare tab and is saved in the script.',
+             '', 'beta'),
             ('Cue colors', 'Cues you can read from across the room.',
              'Video, slides, general, audio and bookmarks each have a color from the start, and you can add custom cues of your own. Change any color to match how your crew already works.',
              'The script editor with all five cue types visible in a few lines of a realistic script.', 'live'),
@@ -147,6 +169,9 @@ PILLARS = [
             ('Margins and alignment', 'Text set where the presenter wants it.',
              'Tight, Normal or Wide to start, or your own numbers for the left and right margins. Align the script left, centered or right.',
              'The margins settings in the Prompter tab, and the Text tab showing alignment.', 'live'),
+            ('Snap to stanza', 'Verses and lyrics that move a stanza at a time.',
+             'Mark the lines that should snap, by line or by style, and the prompter glides one stanza to the top with the next one dimmed. Long stanzas get page stops, and TURN tags show where to turn.',
+             '', 'beta'),
             ('Back up smoothly', 'Go backward as easily as forward.',
              'Turn the speed past zero and the script scrolls backward, so a presenter can repeat a line without a jump.',
              'The live bar speed control, and a short screen recording of the script scrolling backward.', 'live'),
@@ -198,9 +223,12 @@ def shot_media(title):
     return f'<figure class="shotfig"><a href="assets/shots/{src}"><img src="assets/shots/{src}" alt="{alt}" loading="lazy"></a></figure>'
 
 
+BETA_NOTE = '<p class="note">Features marked <span class="badge">Beta</span> are built and tested, but have not yet been tried by hand at a real show. They arrive in the next beta build.</p>'
+
+
 def feat_block(f):
     title, head, copy, shot, status = f
-    badge = '<span class="badge">Coming soon</span>' if status == "soon" else ""
+    badge = {"soon": '<span class="badge">Coming soon</span>', "beta": '<span class="badge">Beta</span>'}.get(status, "")
     media = (shot_media(title) if title in SHOTS else (ph("Capture: " + shot, 240) if shot else "")) if status == "live" else ""
     cls = "feat" if media else "feat feat-text"
     return (f'<article class="{cls}"><div><p class="eyebrow">{title}{badge}</p><h2>{head}</h2><p>{copy}</p></div>{media}</article>')
@@ -214,7 +242,7 @@ def pillar_page(i, p):
     pager += f'<a href="{next_["slug"]}.html">{next_["name"]} &rarr;</a>' if next_ else '<a href="features.html">All features</a>'
     pager += "</nav>"
     body = (hero(p["h1"], p["lede"], False, f'<a class="crumb" href="features.html">Features</a> / {p["name"]} · {p["audiences"]}') +
-            '<section class="wrap stack">' + "".join(feat_block(f) for f in p["feats"]) + "</section>" +
+            '<section class="wrap stack">' + BETA_NOTE * any(f[4] == "beta" for f in p["feats"]) + "".join(feat_block(f) for f in p["feats"]) + "</section>" +
             '<section class="wrap cta"><h2>Try it on your next show.</h2><p><a class="btn" href="download.html">' + CHEV + 'Download</a></p></section>' + pager)
     return (p["slug"] + ".html", f'{p["name"]} | Cadence Prompt', p["lede"], body)
 
