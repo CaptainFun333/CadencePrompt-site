@@ -19,7 +19,7 @@ section{padding-block:28px}.cta{text-align:center;padding-block:64px}
 .cols article{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:20px}
 .cols p{color:var(--mute);margin:0}
 .stack{display:flex;flex-direction:column;gap:24px}.feat{display:grid;gap:24px;grid-template-columns:1fr 1.3fr;align-items:center;border-top:1px solid var(--line);padding-top:24px}
-.prose{max-width:70ch}.prose p,.prose li{color:var(--mute)}.note{font-size:14px;color:var(--mute)}.mono{font-family:var(--mono);font-size:14px;color:var(--mute)}
+.prose>*{max-width:70ch}.prose p,.prose li{color:var(--mute)}.note{font-size:14px;color:var(--mute)}.mono{font-family:var(--mono);font-size:14px;color:var(--mute)}
 .btn{display:inline-flex;align-items:center;gap:10px;background:var(--fg);color:#0b0d10;text-decoration:none;font:700 16px var(--brand);letter-spacing:.06em;text-transform:uppercase;padding:13px 24px;
  clip-path:polygon(9px 0,calc(100% - 9px) 0,100% 9px,100% calc(100% - 9px),calc(100% - 9px) 100%,9px 100%,0 calc(100% - 9px),0 9px)}
 .btn:hover{background:#fff}.btn.small{padding:8px 16px;font-size:14px;clip-path:polygon(6px 0,calc(100% - 6px) 0,100% 6px,100% calc(100% - 6px),calc(100% - 6px) 100%,6px 100%,0 calc(100% - 6px),0 6px)}
@@ -55,3 +55,7 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding-block:28px;color
 /* real screenshots */
 .shotfig{margin:0}.shotfig img,.shotfig video{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:8px;background:#0b0d10}.shotfig a{display:block}
 .hero-shot{max-width:1100px;margin-inline:auto}
+
+/* list text sits on the content column, against the reading-line chevron; the bullets hang in the page gutter */
+main ul:not(.pains){padding-left:0;margin-left:0;list-style-position:outside}
+main ul:not(.pains) li{margin-left:0}
