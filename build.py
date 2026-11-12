@@ -1,3 +1,4 @@
+import hashlib
 import os
 
 # ---- site structure -------------------------------------------------------
@@ -5,6 +6,7 @@ NAV = [("index.html", "Home"), ("features.html", "Features"), ("download.html", 
        ("help.html", "Help"), ("about.html", "About"), ("changelog.html", "Changelog"), ("support.html", "Support")]
 CHEV = '<svg class="chev" viewBox="963 238 262 565" aria-hidden="true"><path fill="currentColor" d="M963 238L1225 521L963 803V606L1042 520L963 434Z"/></svg>'
 SITE = "https://cadenceprompt.com/"
+CSS_V = hashlib.md5(open("style.css", "rb").read()).hexdigest()[:8]   # a changed stylesheet gets a new address, so no one keeps the old one
 
 
 def page(fn, title, desc, body, cur=None):
@@ -16,7 +18,7 @@ def page(fn, title, desc, body, cur=None):
 <link rel="icon" href="assets/cp-mark-small-white.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Hanken+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap">
-<link rel="stylesheet" href="style.css"></head><body>
+<link rel="stylesheet" href="style.css?v={CSS_V}"></head><body>
 <div class="readline" aria-hidden="true"><svg viewBox="963 238 262 565"><path fill="currentColor" d="M963 238L1225 521L963 803V606L1042 520L963 434Z"/></svg></div>
 <header class="top"><div class="wrap bar"><a class="logo" href="index.html" aria-label="Cadence Prompt home"><img src="assets/cadence-prompt-horizontal-white.svg" alt="Cadence Prompt" height="34"></a>
 <nav aria-label="Main">{nav}</nav><a class="btn small" href="download.html">Download</a></div></header>
