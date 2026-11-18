@@ -70,3 +70,19 @@ main ul:not(.pains) li{margin-left:0}
 nav{order:3;flex:0 0 100%;margin-inline:-8px}
 nav a{padding:6px 8px;font-size:14px}
 }
+/* Learn pages (learn.py) */
+.lgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:8px auto 32px}
+.lcard{display:block;text-decoration:none;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:20px}.lcard:hover{border-color:var(--mute)}
+.lcard h3{margin:0 0 8px}.lcard p{color:var(--mute);margin:0 0 12px}
+.lmin{font:500 12px var(--mono);letter-spacing:.06em;color:var(--mute)}
+.lintro{max-width:760px}.ltoc li{margin:4px 0}
+.lmods{max-width:760px}.lmod{margin:44px 0;padding-top:24px;border-top:1px solid var(--line)}
+.lmod header{display:flex;flex-direction:column;gap:2px;margin-bottom:12px}.lmod h2{margin:0}
+.lnum{font:500 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+.lchap h3{margin:28px 0 8px;font-size:18px}
+.lA{margin:0 0 12px}.lB{margin:0 0 12px;color:var(--mute);font-style:italic}.lC{margin:0 0 12px;color:var(--cue-general);padding-left:12px;border-left:3px solid var(--cue-general)}.lN{margin:0 0 12px;color:var(--mute)}
+.lturn{margin:16px 0;padding:10px 14px;border:1px solid #ffc83c;border-radius:8px;background:rgba(255,200,60,.08)}.lturn b{font:600 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#ffc83c;margin-right:8px}
+.lcue{font:500 13px var(--mono);color:var(--c);border:1px solid var(--c);border-radius:4px;padding:1px 6px;white-space:nowrap}
+.lfig{margin:12px 0}.lfig img{display:block;max-width:100%;height:auto;border:1px solid var(--line);border-radius:8px;background:#0b0d10}
+.lkey{vertical-align:middle;border-radius:4px}
+.lshow{text-decoration:underline;text-decoration-color:#ffc83c;text-decoration-thickness:2px;text-underline-offset:3px}

@@ -2,7 +2,7 @@ import hashlib
 import os
 
 # ---- site structure -------------------------------------------------------
-NAV = [("index.html", "Home"), ("features.html", "Features"), ("download.html", "Download"),
+NAV = [("index.html", "Home"), ("features.html", "Features"), ("learn.html", "Learn"), ("download.html", "Download"),
        ("help.html", "Help"), ("about.html", "About"), ("changelog.html", "Changelog"), ("support.html", "Support")]
 CHEV = '<svg class="chev" viewBox="963 238 262 565" aria-hidden="true"><path fill="currentColor" d="M963 238L1225 521L963 803V606L1042 520L963 434Z"/></svg>'
 SITE = "https://cadenceprompt.com/"
@@ -367,9 +367,12 @@ P["privacy.html"] = ("Privacy | Cadence Prompt", "What Cadence Prompt keeps, wha
 </section>""")
 P["terms.html"] = ("Terms | Cadence Prompt", "Terms of use.", hero("Terms", "[Terms to write before launch.]", False))
 
+import learn
+P.update(learn.pages(hero))
+
 # pillar pages highlight "Features" in the nav
 for fn, (t, d, b) in P.items():
-    cur = "features.html" if fn in [p["slug"] + ".html" for p in PILLARS] else fn
+    cur = "features.html" if fn in [p["slug"] + ".html" for p in PILLARS] else ("learn.html" if fn.startswith("learn-") else fn)
     open(fn, "w").write(page(fn, t, d, b, cur))
 
 open("CNAME", "w").write("cadenceprompt.com\n")
