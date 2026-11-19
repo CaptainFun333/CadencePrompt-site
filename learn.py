@@ -3,6 +3,7 @@ build.py calls pages(); pictures are copied from the app's tools/welcome-art int
 import html
 import json
 import os
+import base64
 import re
 import shutil
 import struct
@@ -135,6 +136,90 @@ def module_html(text, num):
     return meta, ''.join(body)
 
 
+def mark_html(text, marks):
+    out = e(text)
+    for m in marks or []:
+        t = m['type']
+        if t == 'showMe':
+            out = '<strong class="lshow">%s</strong>' % out
+        elif t == 'bold':
+            out = '<strong>%s</strong>' % out
+        elif t == 'italic':
+            out = '<em>%s</em>' % out
+        elif t == 'underline':
+            out = '<u>%s</u>' % out
+    return out
+
+
+def picture_asset(doc, attrs):
+    """Writes a picture that is kept inside a script and returns (its address, width, height)."""
+    p = doc['pictures'][attrs['id']]
+    ext = 'jpg' if p['mime'] == 'image/jpeg' else 'png'
+    name = '%s.%s' % (attrs['id'][:12], ext)
+    os.makedirs(OUT, exist_ok=True)
+    with open(os.path.join(OUT, name), 'wb') as f:
+        f.write(base64.b64decode(p['data']))
+    return 'assets/learn/' + name, p['w'], p['h']
+
+
+def cdnc_html(doc, num):
+    """A script written in Cadence itself: a blank line ends a thought, a bookmark with a name starts a chapter, a YOUR TURN cue is a call-out."""
+    body, para, chap = [], [], [False]
+
+    def flush():
+        if para:
+            body.append('<p class="l%s">%s</p>' % (para[0][0], '<br>'.join(p for _, p in para)))
+            para.clear()
+
+    def chapter(name):
+        flush()
+        if chap[0]:
+            body.append('</section>')
+        body.append('<section class="lchap">%s' % ('<h3>%s</h3>' % e(name) if name else ''))
+        chap[0] = True
+    for p in doc['content']['content']:
+        nodes = p.get('content')
+        if not nodes:
+            flush()
+            continue
+        sp = p['attrs'].get('speaker') or 'N'
+        html_parts, lone = [], None
+        for n in nodes:
+            t = n['type']
+            if t == 'bookmark':
+                chapter(n['attrs'].get('name'))
+            elif t == 'text':
+                html_parts.append(mark_html(n['text'], n.get('marks')))
+            elif t == 'picture':
+                if doc['pictures'][n['attrs']['id']]['name'] == 'Cadence Prompt logo':
+                    continue
+                src, w, h = picture_asset(doc, n['attrs'])
+                lines = n['attrs'].get('h') or 1.25
+                if len(nodes) == 1 or all(x['type'] in ('picture', 'bookmark') for x in nodes):
+                    wide = w / h > 6
+                    style = '' if wide else ' style="max-height:%dpx"' % min(380, int(lines * 40))
+                    lone = '<figure class="lfig"><img src="%s" alt="" width="%d" height="%d" loading="lazy"%s></figure>' % (src, w, h, style)
+                else:
+                    html_parts.append('<img class="lkey" src="%s" alt="" style="height:%.2fem" width="%d" height="%d" loading="lazy">' % (src, lines * 1.15, w, h))
+            elif t == 'cue':
+                text = ''.join(c.get('text', '') for c in n.get('content', []))
+                if text.startswith('YOUR TURN'):
+                    flush()
+                    body.append('<p class="lturn"><b>Your turn</b> %s</p>' % e(re.sub(r'^YOUR TURN\s*-\s*', '', text)))
+                elif not re.match(r'timer (set|start|finish)', text, re.I):
+                    flush()
+                    body.append('<p class="lN"><span class="lcue" style="--c:%s">%s</span></p>' % (n['attrs'].get('color') or cue_color(text), e(text)))
+        if lone:
+            flush()
+            body.append(lone)
+        elif html_parts:
+            para.append((sp, ''.join(html_parts)))
+    flush()
+    if chap[0]:
+        body.append('</section>')
+    return ''.join(body)
+
+
 def pages(hero, ph=None):
     """{file name: (title, description, body)} for Learn and each series."""
     spec = json.load(open(os.path.join(WELCOME, 'series.json')))['series']
@@ -143,7 +228,11 @@ def pages(hero, ph=None):
     for sr in spec:
         mods, toc, total = [], [], 0
         for i, name in enumerate(sr['modules'], 1):
-            meta, body = module_html(open(os.path.join(WELCOME, sr['id'], name + '.txt')).read(), i)
+            if isinstance(name, dict):                                                              # a script written in Cadence (tools/welcome/<series>/<id>.cdnc)
+                doc = json.load(open(os.path.join(WELCOME, sr['id'], name['id'] + '.cdnc')))
+                meta, body = {'title': doc['title'], 'minutes': name['minutes']}, cdnc_html(doc, i)
+            else:
+                meta, body = module_html(open(os.path.join(WELCOME, sr['id'], name + '.txt')).read(), i)
             toc.append('<li><a href="#m%d">%s</a> <span class="lmin">%s min</span></li>' % (i, e(meta['title']), e(meta['minutes'])))
             mods.append('<article class="lmod" id="m%d"><header><span class="lnum">Module %d</span><h2>%s</h2><span class="lmin">About %s minutes</span></header>%s</article>' % (i, i, e(meta['title']), e(meta['minutes']), body))
         fn = 'learn-%s.html' % sr['id']
