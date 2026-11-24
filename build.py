@@ -335,7 +335,7 @@ P["changelog.html"] = ("Changelog | Cadence Prompt", "What changed in each versi
     '<h2>0.1.0 · October 30, 2026</h2><ul><li>The first beta, for Mac (Apple Silicon and Intel) and Windows: Import &amp; Prep, the live bar, runlists, timer cues, the speaker timer and crew pages, Stream Deck control and the presenter settings described on the feature pages.</li></ul>'
     '<p class="note">New beta builds are listed here the day they go out.</p></section>')
 P["support.html"] = ("Support | Cadence Prompt", "Contact and support.",
-    hero("Support", "Tell us what you ran into.", False) + '<section class="wrap prose"><p>Email <a href="mailto:CadencePrompt@gmail.com">CadencePrompt@gmail.com</a>. Include your version and what you were doing.</p><p>Tell me what is working and what needs fixing. If it needs fixing, Ready to make it right. Share your wins too: they tell me what to protect.</p><p class="note">Move to support@cadenceprompt.com once domain email is set up.</p></section>')
+    hero("Support", "Tell us what you ran into.", False) + '<section class="wrap prose"><p>Email <a href="mailto:CadencePrompt@gmail.com">CadencePrompt@gmail.com</a>. Include your version and what you were doing.</p><p>Sending a script in more than one language? See <a href="send-a-script.html">how to prepare it</a>.</p><p>Tell me what is working and what needs fixing. If it needs fixing, Ready to make it right. Share your wins too: they tell me what to protect.</p><p class="note">Move to support@cadenceprompt.com once domain email is set up.</p></section>')
 P["about.html"] = ("About | Cadence Prompt", "Why Cadence Prompt exists.",
     hero("Why I built Cadence Prompt", "Eighteen years of shows, and one tool I kept working around.", False) +
     '<section class="wrap prose"><p class="note">Draft in Brad\'s voice, built from the founder survey. To rewrite in his own words before it goes live.</p>'
@@ -388,6 +388,28 @@ P["privacy.html"] = ("Privacy | Cadence Prompt", "What Cadence Prompt keeps, wha
 <p>Write to <a href="mailto:CadencePrompt@gmail.com">CadencePrompt@gmail.com</a> with a question or a request to remove something.</p>
 </section>""")
 P["terms.html"] = ("Terms | Cadence Prompt", "Terms of use.", hero("Terms", "[Terms to write before launch.]", False))
+
+P["send-a-script.html"] = ("Send us a script in more than one language | Cadence Prompt", "How to prepare a script in two or more languages so Cadence can read each one as its own script.",
+    hero("Sending a script in more than one language", "Three ways that work, and three rules for all of them.", False) + """<section class="wrap prose">
+<p>When a show runs in more than one language, Cadence reads each language as a script of its own, kept in step line for line. The easier the file is to read, the less anyone has to prepare by hand. Here is what works best, in order.</p>
+<h2>The three rules</h2>
+<ul>
+<li><strong>The same cue numbers in every language</strong> (<code>[001]</code>, <code>[002]</code>, and so on).</li>
+<li><strong>The same number of lines in every language</strong>, in the same order. If one language really has an extra announcement, that is fine: Cadence says so plainly and carries on.</li>
+<li><strong>Say which language is which</strong>: in the file name, in a heading row, or in a heading.</li>
+</ul>
+<h2>1. One file for each language (best)</h2>
+<p>Send <code>Summit_EN.docx</code>, <code>Summit_ES.docx</code>, and so on, with the same cue numbers in each. Nothing special is needed on our side: each file is a normal import. <a href="assets/samples/Summit_EN.docx">Sample, English</a> · <a href="assets/samples/Summit_ES.docx">Sample, Spanish</a></p>
+<h2>2. One table, a column for each language</h2>
+<p>A heading row that names each language (<em>English</em>, <em>Español</em>), and one row for each beat. Put the speaker and the cue number in their own column (<code>[001] HOST</code>). A column of visuals or notes on the left is fine, and a row across the whole table can carry a scene title. Please do not merge the language cells. <a href="assets/samples/Summit_table_EN_ES.docx">Sample table</a></p>
+<h2>3. One file, a section for each language</h2>
+<p>Put each language under its own heading on a line of its own, such as <em>ENGLISH (EN)</em> and <em>ESPAÑOL (ES)</em> (Heading 1 is best). Anything before the first heading, like the title, goes into every language. Repeat the same cue numbers in each section. <a href="assets/samples/Summit_sections_EN_ES.docx">Sample sections</a></p>
+<h2>Anything else</h2>
+<p>Send it as it is and tell us which language you need. Cadence can still import it, but someone has to prepare it by hand.</p>
+<h2>Please avoid</h2>
+<p>Facing pages (one language on the left page, one on the right), translations hidden in footnotes or comments, and languages switched off through Word styles. They are hard to read without guessing. Any of the three ways above is easy to send instead.</p>
+<p class="note">A page on this site to help clients prepare their content the best way is planned, and will come later.</p>
+</section>""")
 
 import learn
 P.update(learn.pages(hero))
