@@ -49,8 +49,12 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding-block:28px;color
 .pager{display:flex;justify-content:space-between;padding-block:8px 0}.pager a{color:var(--mute);text-decoration:none;font-weight:600}.pager a:hover{color:var(--fg)}
 
 /* founder-voice sections */
-.pains{list-style:none;padding:0;margin:14px 0;display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-.pains li{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 14px;color:var(--mute)}
+.pains{list-style:none;padding:0;margin:14px 0;display:grid;gap:10px}
+.pains li{margin:0}
+.pain{display:grid;grid-template-columns:1fr 28px 1fr;align-items:center;gap:20px;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:18px 22px;text-decoration:none}
+.pain .prob{color:var(--mute)}.pain .sol{color:var(--fg)}.pain .chev{height:26px;width:auto;color:var(--mute)}
+.pain:hover{border-color:var(--fg)}.pain:hover .chev{color:var(--fg)}
+@media(max-width:700px){.pain{grid-template-columns:1fr;gap:10px;padding:16px}.pain .chev{transform:rotate(90deg);justify-self:start;margin-left:4px}}
 .built{margin:6px 0 0}.built a{color:var(--fg)}.prose h2{margin-top:26px}
 
 /* real screenshots */
