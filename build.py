@@ -1,5 +1,7 @@
 import hashlib
 import os
+import art
+ART = {'prep': art.prep, 'run-the-show': art.run_show, 'time-and-cues': art.time_cues, 'a-better-read': art.better_read}
 
 # ---- site structure -------------------------------------------------------
 NAV = [("index.html", "Home"), ("features.html", "Features"), ("learn.html", "Learn"), ("download.html", "Download"),
@@ -250,7 +252,7 @@ def feat_block(f):
 def jump_strip(cur=None, pos="top"):
     cur_attr = ' aria-current="page"'
     links = "".join(f'<a href="{q["slug"]}.html"{cur_attr if q["slug"] == cur else ""}>{q["name"]}</a>' for q in PILLARS)
-    return f'<nav class="jump {pos}" aria-label="Feature pages"><div class="wrap">{links}</div></nav>'
+    return f'<nav class="jump j{pos}" aria-label="Feature pages"><div class="wrap">{links}</div></nav>'
 
 
 def pillar_page(i, p):
@@ -294,8 +296,8 @@ P["index.html"] = ("Cadence Prompt: teleprompter software for the whole show",
 P["features.html"] = ("Features | Cadence Prompt", "What Cadence Prompt does differently.",
     jump_strip() + hero("What is different", "Four places to start, built around the three people in the room.", False) +
     '<section class="wrap stack">' + "".join(
-        f'<article class="feat feat-text"><div><p class="eyebrow">{p["audiences"]}</p><h2><a href="{p["slug"]}.html">{p["name"]}</a></h2><p>{p.get("fcard", p["lede"])}</p>'
-        f'<p><a class="link0" href="{p["slug"]}.html">See {p["name"].lower()} &rarr;</a></p></div></article>' for p in PILLARS) + "</section>")
+        f'<article class="feat"><div><p class="eyebrow">{p["audiences"]}</p><h2><a href="{p["slug"]}.html">{p["name"]}</a></h2><p>{p.get("fcard", p["lede"])}</p>'
+        f'<p><a class="link0" href="{p["slug"]}.html">See {p["name"].lower()} &rarr;</a></p></div>{ART[p["slug"]]()}</article>' for p in PILLARS) + "</section>")
 
 P["download.html"] = ("Get Cadence Prompt | Cadence Prompt", "Ask for a beta access code for Cadence Prompt.",
     hero("Get Cadence Prompt", "Cadence Prompt is currently in beta, and an access code unlocks it. Reach out for a code and I&rsquo;ll send one your way.", False) +
