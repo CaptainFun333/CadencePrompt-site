@@ -10,6 +10,7 @@ import struct
 
 APP = os.path.expanduser('~/Developer/cadence')
 WELCOME = os.path.join(APP, 'tools', 'welcome')
+SERIES_NOTE = "These are the exact scripts you'll read on the prompter inside the app, laid out here as a reference page. Inside Cadence, just hit Play, read along, and pause at each Your turn to try it live. Practice is always optional."
 ART = os.path.join(APP, 'tools', 'welcome-art')
 OUT = os.path.join('assets', 'learn')
 COLORS = {'timer': '#ff9f40', 'video': '#ff5a5a', 'slide': '#ffe14d', 'audio': '#66ff66', 'cue': '#66ccff'}
@@ -236,12 +237,12 @@ def pages(hero, ph=None):
             toc.append('<li><a href="#m%d">%s</a> <span class="lmin">%s min</span></li>' % (i, e(meta['title']), e(meta['minutes'])))
             mods.append('<article class="lmod" id="m%d"><header><span class="lnum">Module %d</span><h2>%s</h2><span class="lmin">About %s minutes</span></header>%s</article>' % (i, i, e(meta['title']), e(meta['minutes']), body))
         fn = 'learn-%s.html' % sr['id']
-        intro = '<section class="wrap lintro"><p>These are the scripts you read on the prompter inside Cadence Prompt, shown as a page. In the app you press Play, read, and try each <b>Your turn</b> as you go. Practice is optional.</p><ol class="ltoc">%s</ol><p><a class="link" href="learn.html">&larr; All the series</a></p></section>' % ''.join(toc)
-        P[fn] = ('%s | Learn | Cadence Prompt' % sr['title'], sr['about'], hero(sr['title'], sr['about'], False, 'Learn') + intro + '<div class="wrap lmods">' + ''.join(mods) + '</div>')
+        intro = '<section class="wrap lintro"><ol class="ltoc">%s</ol><p><a class="link" href="learn.html">&larr; All the series</a></p></section>' % ''.join(toc)
+        P[fn] = ('%s | Learn | Cadence Prompt' % sr['title'], sr['about'], hero(sr['title'], sr['about'] + ' ' + SERIES_NOTE, False, 'Learn') + intro + '<div class="wrap lmods">' + ''.join(mods) + '</div>')
         cards.append('<a class="lcard" href="%s"><h3>%s</h3><p>%s</p><span class="lmin">%d modules</span></a>' % (fn, e(sr['title']), e(sr['about']), len(sr['modules'])))
     order = ''.join(cards)
     P['learn.html'] = ('Learn | Cadence Prompt', 'Learn Cadence Prompt, and how to run a prompter, one short module at a time.',
-                       hero('Learn Cadence Prompt', 'Short modules that teach one or two things at a time. Start from the beginning, or jump to the series you need.', False, 'Learn')
+                       hero('Learn Cadence Prompt', 'Short, hands-on modules that teach one or two skills at a time. Start from the beginning, or jump straight to the series you need.', False, 'Learn')
                        + '<section class="wrap lgrid">%s</section>' % order
-                       + '<section class="wrap lintro"><p>Inside the app, the same series are under <b>Help &rsaquo; Learn</b>. You read each one on the prompter, press Play, and try things as you go. Some features in these lessons are marked as new and untried: they are built, and not yet checked on real gear.</p></section>')
+                       + '<section class="wrap lintro"><p>Inside the app, you&rsquo;ll find these exact same series under <b>Help &rsaquo; Learn</b>. You read each module straight off the prompter, press Play, and try every feature live as you go. A few features in these lessons are marked new and untried, meaning they&rsquo;re built and ready to test, though not yet field-checked on live show gear.</p></section>')
     return P
