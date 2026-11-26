@@ -126,7 +126,7 @@ PILLARS = [
              '', 'live'),
         ]),
     dict(
-        slug='time-and-cues', name='Time and cues', audiences='Crew · Presenter',
+        slug='time-and-cues', name='Time, Cues, and Collaboration', audiences='Crew · Presenter',
         h1='Everyone sees where the show is, and what is next.',
         lede='How much longer do they have? How long did that segment take? Now the whole crew can see for themselves, because timers and cues live in the script and everyone works from the same clock.',
         card='One clock and one cue list for the whole room.',
@@ -245,16 +245,16 @@ def feat_block(f):
     return (f'<article class="{cls}"><div><p class="eyebrow">{title}{badge}</p><h2>{head}</h2><p>{copy}</p></div>{media}</article>')
 
 
+def jump_strip(cur=None, pos="top"):
+    cur_attr = ' aria-current="page"'
+    links = "".join(f'<a href="{q["slug"]}.html"{cur_attr if q["slug"] == cur else ""}>{q["name"]}</a>' for q in PILLARS)
+    return f'<nav class="jump {pos}" aria-label="Feature pages"><div class="wrap">{links}</div></nav>'
+
+
 def pillar_page(i, p):
-    prev_ = PILLARS[i - 1] if i > 0 else None
-    next_ = PILLARS[i + 1] if i < len(PILLARS) - 1 else None
-    pager = '<nav class="pager wrap" aria-label="More features">'
-    pager += f'<a href="{prev_["slug"]}.html">&larr; {prev_["name"]}</a>' if prev_ else "<span></span>"
-    pager += f'<a href="{next_["slug"]}.html">{next_["name"]} &rarr;</a>' if next_ else '<a href="features.html">All features</a>'
-    pager += "</nav>"
-    body = (hero(p["h1"], p["lede"], False, f'<a class="crumb" href="features.html">Features</a> / {p["name"]} · {p["audiences"]}') +
+    body = (jump_strip(p["slug"]) + hero(p["h1"], p["lede"], False, f'<a class="crumb" href="features.html">Features</a> / {p["name"]} · {p["audiences"]}') +
             '<section class="wrap stack">' + BETA_NOTE * any(f[4] == "beta" for f in p["feats"]) + "".join(feat_block(f) for f in p["feats"]) + "</section>" +
-            '<section class="wrap cta"><h2>Try it on your next show.</h2><p><a class="btn" href="download.html">' + CHEV + 'Download</a></p></section>' + pager)
+            '<section class="wrap cta"><h2>Try it on your next show.</h2><p><a class="btn" href="download.html">' + CHEV + 'Download</a></p></section>' + jump_strip(p["slug"], "bottom"))
     return (p["slug"] + ".html", f'{p["name"]} | Cadence Prompt', p["lede"], body)
 
 
@@ -290,7 +290,7 @@ P["index.html"] = ("Cadence Prompt: teleprompter software for the whole show",
     '<section class="wrap cta"><h2>Try it on your next show.</h2><p><a class="btn" href="download.html">' + CHEV + 'Download</a></p></section>')
 
 P["features.html"] = ("Features | Cadence Prompt", "What Cadence Prompt does differently.",
-    hero("What is different", "Four places to start, built around the three people in the room.", False) +
+    jump_strip() + hero("What is different", "Four places to start, built around the three people in the room.", False) +
     '<section class="wrap stack">' + "".join(
         f'<article class="feat feat-text"><div><p class="eyebrow">{p["audiences"]}</p><h2><a href="{p["slug"]}.html">{p["name"]}</a></h2><p>{p["lede"]}</p>'
         f'<p><a class="link0" href="{p["slug"]}.html">See {p["name"].lower()} &rarr;</a></p></div></article>' for p in PILLARS) + "</section>")
