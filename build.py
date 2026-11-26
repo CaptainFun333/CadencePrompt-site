@@ -9,12 +9,16 @@ SITE = "https://cadenceprompt.com/"
 CSS_V = hashlib.md5(open("style.css", "rb").read()).hexdigest()[:8]   # a changed stylesheet gets a new address, so no one keeps the old one
 
 
+NOINDEX = {"send-a-script.html"}      # built and reachable by its address, but unlinked and kept out of search while the page is developed
+
+
 def page(fn, title, desc, body, cur=None):
     cur = cur or fn
+    robots = '<meta name="robots" content="noindex">' if fn in NOINDEX else ""
     nav = "".join('<a href="%s"%s>%s</a>' % (h, ' aria-current="page"' if h == cur else "", t) for h, t in NAV)
     return f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{title}</title><meta name="description" content="{desc}">
+<title>{title}</title><meta name="description" content="{desc}">{robots}
 <link rel="icon" href="assets/cp-mark-small-white.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Hanken+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap">
@@ -336,7 +340,7 @@ P["changelog.html"] = ("Changelog | Cadence Prompt", "What changed in each versi
     '<h2>0.1.0 · October 30, 2026</h2><ul><li>The first beta, for Mac (Apple Silicon and Intel) and Windows: Import &amp; Prep, the live bar, runlists, timer cues, the speaker timer and crew pages, Stream Deck control and the presenter settings described on the feature pages.</li></ul>'
     '<p class="note">New beta builds are listed here the day they go out.</p></section>')
 P["support.html"] = ("Support | Cadence Prompt", "Contact and support.",
-    hero("Support", "Tell us what you ran into.", False) + '<section class="wrap prose"><p>Email <a href="mailto:CadencePrompt@gmail.com">CadencePrompt@gmail.com</a>. Include your version and what you were doing.</p><p>Sending a script in more than one language? See <a href="send-a-script.html">how to prepare it</a>.</p><p>Tell me what is working and what needs fixing. If it needs fixing, Ready to make it right. Share your wins too: they tell me what to protect.</p><p class="note">Move to support@cadenceprompt.com once domain email is set up.</p></section>')
+    hero("Support", "Tell us what you ran into.", False) + '<section class="wrap prose"><p>Email <a href="mailto:CadencePrompt@gmail.com">CadencePrompt@gmail.com</a>. Include your version and what you were doing.</p><p>Tell me what is working and what needs fixing. If it needs fixing, Ready to make it right. Share your wins too: they tell me what to protect.</p><p class="note">Move to support@cadenceprompt.com once domain email is set up.</p></section>')
 P["about.html"] = ("About | Cadence Prompt", "Why Cadence Prompt exists.",
     hero("Why I built Cadence Prompt", "Eighteen years of shows, and one tool I kept working around.", False) +
     '<section class="wrap prose"><p class="note">Draft in Brad\'s voice, built from the founder survey. To rewrite in his own words before it goes live.</p>'
@@ -423,6 +427,6 @@ for fn, (t, d, b) in P.items():
 open("CNAME", "w").write("cadenceprompt.com\n")
 open("robots.txt", "w").write(f"User-agent: *\nAllow: /\nSitemap: {SITE}sitemap.xml\n")
 open(".nojekyll", "w").write("")
-urls = "".join(f"<url><loc>{SITE}{'' if fn == 'index.html' else fn}</loc></url>" for fn in sorted(list(P) + ["manual.html"]))
+urls = "".join(f"<url><loc>{SITE}{'' if fn == 'index.html' else fn}</loc></url>" for fn in sorted(list(P) + ["manual.html"]) if fn not in NOINDEX)
 open("sitemap.xml", "w").write(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{urls}</urlset>\n')
 print(len(P), "pages")
