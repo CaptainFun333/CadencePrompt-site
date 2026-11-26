@@ -131,39 +131,36 @@ PILLARS = [
         lede='How much longer do they have? How long did that segment take? Now the whole crew can see for themselves, because timers and cues live in the script and everyone works from the same clock.',
         card='One clock and one cue list for the whole room.',
         feats=[
+            'Time',
             ('Speaker timer', 'A clock the presenter can trust.',
-             'The time remaining, the segment name, and an estimate that says plainly whether the segment is running over or under. The presenter never has to do the arithmetic.',
+             "The time remaining, the segment name, and a live pace estimate that says plainly whether they're running over or under. The presenter never has to do mental math on stage.",
              'The speaker timer page: Time remaining as the large clock on the right half; real time, the estimate (for example -0:12), Coming up and pace on the left.', 'live'),
-            ('Coming up', 'See the next cue before it arrives.',
-             'A live list of the cues ahead of the reading line, each with the time until it. It moves up as the reading crosses each one, so crew know what is next without reading the script.',
-             'The operator window with the Coming up list under the timer card, showing four or five cues in different colors with times.', 'live'),
-            ('Timer cues in the script', 'Timer events fire from the script.',
-             'Set, start and finish cues sit right in the text. An indicator above the script shows how many are armed and turns red if they are off, and pressing Play arms them, so a cue you scroll past starts the clock by itself. Pause disarms them and stops the clock. If a segment finishes with time to spare, the clock stops and turns green.',
+            ('Timer cues in the script', 'Timer events fire right from the text.',
+             "Set, start and finish cues live directly inside the script. An indicator above the editor shows how many cues are armed and turns red if they're off. Pressing Play arms them automatically, so scrolling past a Start cue kicks off the clock by itself. Pressing Pause disarms them and stops the clock. If a segment wraps with time to spare, the clock stops and turns green.",
              'Two crops of the live bar side by side: Armed 5 in green and OFF 5 in red. Optionally the green finished clock.', 'live'),
-            ('Share the speaker timer', 'Put the clock on any screen.',
-             'Switch on sharing and Cadence lists an address for each network you are on. Crew on the same venue network open it in a browser, with no extra cables or software. The Time remaining half is a clean clock that other systems can use.',
-             'The Share on the network switch with the listed addresses and viewer count, next to the timer page open in a browser window.', 'live'),
             ('Clock colors', 'A timer that shows its state at a glance.',
-             'Five states, Running, Warning, Over time, Paused and Finished early, each get a color you choose, saved with the script. The timer and the time of day share the same style.',
+             'Five states (Running, Warning, Over time, Paused and Finished early) each get their own color, saved right with the script.',
              '', 'beta'),
-            ('Crew script view', 'The script on any crew browser, with a way to suggest.',
-             'Crew on the venue network open the script in its own colors, following the reading line, with larger or smaller text and a Notes PIN. A Suggest box lets them tap a line or select words and send a note, which arrives in the operator\'s Prepare tab and is saved in the script. Sign everyone out in the Collaboration drawer forgets every crew login at once.',
-             '', 'beta'),
+            'Cues',
+            ('Coming up', 'See the next cue before it hits.',
+             'A live list of upcoming cues ahead of the reading line, each showing the exact time until it lands. As you scroll past each cue, the list advances automatically, so you always know what\'s next without hunting through the script.',
+             'The operator window with the Coming up list under the timer card, showing four or five cues in different colors with times.', 'live'),
             ('Cue colors', 'Cues you can read from across the room.',
-             'Video, slides, general, audio and bookmarks each have a color from the start, and you can add custom cues of your own. Change any color to match how your crew already works.',
+             'Video, slides, general, audio and bookmarks each come color-coded out of the box, and you can build custom cues of your own. Adjust any color to match the system your crew already uses.',
              'The script editor with all five cue types visible in a few lines of a realistic script.', 'live'),
-            ('The cue sheet', 'The show as a rundown.',
-             "The cue sheet opens as a tab beside Script and lists every cue in the script as a rundown, and across a runlist, every script. Every row starts ticked Ready; untick one to mark a missing asset or something to confirm, and the row turns red for the crew. Save it as a PDF or a spreadsheet, or copy it. A stage manager's rundown, made from the script itself.",
+            ('The cue sheet', 'The whole show as a live rundown.',
+             "The cue sheet opens in a tab for you, or on a live page for the crew, turning every cue in your script (or across an entire runlist) into a clean rundown. Every row starts checked Ready. Uncheck one to flag a missing asset or an item to confirm, and the row turns red for the whole crew. Export it as a PDF or spreadsheet, or copy it straight into an email. It's a stage manager's rundown, built automatically from the script itself.",
              '', 'live'),
-            ('Print, PDF and Word', 'A readable copy in a few clicks.',
-             'Print the script, or save it as a PDF, a Word document or plain text, at a comfortable reading size, in print-safe colors, with each speaker named and page numbers in place. A whole runlist can go out as one PDF.',
+            'Collaboration',
+            ('Share the show', 'Put the clock, cues, and script on any screen.',
+             "Flip sharing on to open the speaker timer, the cue sheet and the live script__BETA__ in any browser, with no extra cables or software. Crew on the venue network can follow the script in its actual colors as it tracks the reading line, adjust their own text size, and use an Edit PIN to tap a line or highlight words and send suggestions straight to your Prepare tab. Need to loop in someone off-site? Even if they're not in the building, or even in the country, Cadence can share a link that works right over the internet. When the session wraps, Sign everyone out in the Collaboration drawer clears every crew login at once.",
+             'The Share on the network switch with the listed addresses and viewer count, next to the timer page open in a browser window.', 'live'),
+            ('Pull the script', 'The crew grabs the latest draft without asking.',
+             'When sharing is on, the crew page includes a Pull script button protected by an Edit PIN. Crew members can download the current script as a PDF, Word or text file right onto their own phone or laptop. Nobody has to tap you on the shoulder mid-show for the latest file.',
              '', 'live'),
-            ('Pull the script', 'The crew gets the current script without asking.',
-             'With sharing on, the crew page has a Pull script button, protected by an Edit PIN, that hands over the script as a PDF, Word or text file on their own phone or laptop. No one has to ask the operator to send a file.',
+            ('Print, PDF and Word', 'Clean hard copies in a few clicks.',
+             'For anyone in the room who still trusts paper, print the script or export it as a PDF, a Word document or plain text. Everything lands at a comfortable reading size in print-safe colors, with speaker names and page numbers in place. You can even export a whole runlist as one combined PDF.',
              '', 'live'),
-            ('Cue audiences', 'Show each person only what they need.',
-             "Mark a cue for the crew, the presenter or both, so presenter-only direction stays off the crew's list.",
-             '', 'soon'),
         ]),
     dict(
         slug='a-better-read', name='A better read', audiences='Presenter',
@@ -202,7 +199,7 @@ SHOTS = {
     "Speaker timer": ("time-speaker-timer.png", "The speaker timer page: the time remaining as a large clock on the right with the next segment, and on the left the real time, Coming up with the time to each cue, and the pace."),
     "Coming up": ("time-coming-up.png", "Coming up in the operator window: audio, video and general cues, then the CEO keynote timer set and its slides, each with its kind, name and the time until it."),
     "Timer cues in the script": ("time-timer-cues.png", "The live bar indicator reading Armed in green, and the same indicator reading OFF in red when the cues are disarmed."),
-    "Share the speaker timer": ("time-share.png", "The Collaboration drawer with Sharing on the local network and the View and Edit PINs, next to the speaker timer page it shares."),
+    "Share the show": ("time-share.png", "The Collaboration drawer with Sharing on the local network and the View and Edit PINs, next to the speaker timer page it shares."),
     "Cue colors": ("time-cue-colors.png", "The script editor with a bookmark mark and general, audio, slide and video cues each in its own color, above a timer cue and the first lines of the script."),
     "Speaker Style": ("read-speaker-styles.png", "The Speaker Style tab: each style with a name, color, size, alignment, spacing and snap, the collection they belong to, and a sample at each speaker's color."),
     "The reading marker": ("read-marker.png", "The Marker group of the Prompter tab: the marker shapes, its side, its color, its size and the bookmark color."),
@@ -238,7 +235,10 @@ BETA_NOTE = '<p class="note">Features marked <span class="badge">Beta</span> are
 
 
 def feat_block(f):
+    if isinstance(f, str):
+        return f'<h2 class="group">{f}</h2>'
     title, head, copy, shot, status = f
+    copy = copy.replace("__BETA__", ' <span class="badge">Beta</span>')
     badge = {"soon": '<span class="badge">Coming soon</span>', "beta": '<span class="badge">Beta</span>'}.get(status, "")
     media = (shot_media(title) if title in SHOTS else (ph("Capture: " + shot, 240) if shot else "")) if status == "live" else ""
     cls = "feat" if media else "feat feat-text"
@@ -253,7 +253,7 @@ def jump_strip(cur=None, pos="top"):
 
 def pillar_page(i, p):
     body = (jump_strip(p["slug"]) + hero(p["h1"], p["lede"], False, f'<a class="crumb" href="features.html">Features</a> / {p["name"]} · {p["audiences"]}') +
-            '<section class="wrap stack">' + BETA_NOTE * any(f[4] == "beta" for f in p["feats"]) + "".join(feat_block(f) for f in p["feats"]) + "</section>" +
+            '<section class="wrap stack">' + BETA_NOTE * any(not isinstance(f, str) and (f[4] == "beta" or "__BETA__" in f[2]) for f in p["feats"]) + "".join(feat_block(f) for f in p["feats"]) + "</section>" +
             '<section class="wrap cta"><h2>Try it on your next show.</h2><p><a class="btn" href="download.html">' + CHEV + 'Download</a></p></section>' + jump_strip(p["slug"], "bottom"))
     return (p["slug"] + ".html", f'{p["name"]} | Cadence Prompt', p["lede"], body)
 
