@@ -58,25 +58,25 @@ PILLARS = [
         card="From the writer's rough doc to show-ready script, in a fraction of the time.",
         feats=[
             ('Import & Prep', 'Raw script in, show-ready out.',
-             "Bring in Word docs, PowerPoint or Keynote speaker notes, PDFs, Pages files, Google Docs and Slides, or a shared folder on Drive, Dropbox, OneDrive or Box. One click finds the speakers, colors the stage directions and sweeps for cues. One undo takes the entire pass back. A script is ready to rehearse in a fraction of the time, and each import opens in its own tab so multiple files can sit side by side.",
+             "Bring in Word docs, PowerPoint or Keynote speaker notes, PDFs, Pages files, Google Docs and Slides, or a shared folder on Drive, Dropbox, OneDrive, or Box. One click finds the speakers, colors the stage directions, and sweeps for cues. One undo takes the entire pass back. A script is ready to rehearse in a fraction of the time, and each import opens in its own tab so multiple files can sit side by side.",
              '', 'live'),
             ('Insert from another script', 'Borrow lines from an older script.',
-             "Open an earlier script in a read-only viewer right beside the one you're editing. Find the lines you need, copy them, and paste them straight across. Cues and speaker styles come along for the ride, and Cadence only asks about slide numbering if the sequence doesn't already line up. Reads Word, PowerPoint, Keynote, Pages, PDF and Telescript.",
+             "Open an earlier script in a read-only viewer right beside the one you're editing. Find the lines you need, copy them, and paste them straight across. Cues and speaker styles come along for the ride, and Cadence only asks about slide numbering if the sequence doesn't already line up. Reads Word, PowerPoint, Keynote, Pages, PDF, and Telescript.",
              '', 'beta'),
             ('Prepare tab', 'One click, one undo, for every file.',
-             "Prepare lives in its own tab right beside your script. Walk through each of the six clean-up steps: Set aside, Spacing, Readability, Speakers, Stage directions and Cues. Apply the sure findings to every file at once or step through them individually. Anything Cadence isn't sure about goes to a short review list instead of changing behind your back. Send files into your script one at a time or all at once, in order. Client profiles remember your preferences for each recurring client, and one undo rolls the entire pass back.",
+             "Prepare lives in its own tab right beside your script. Walk through each of the six clean-up steps: Set aside, Spacing, Readability, Speakers, Stage directions, and Cues. Apply the sure findings to every file at once or step through them individually. Anything Cadence isn't sure about goes to a short review list instead of changing behind your back. Send files into your script one at a time or all at once, in order. Client profiles remember your preferences for each recurring client, and one undo rolls the entire pass back.",
              '', 'beta'),
             ('Bring in a new version', 'The late rewrite stops costing a full re-format.',
              "Let the client keep editing their own document. When the new draft lands, it opens in its own tab. Cadence shows you exactly what they changed, what you changed, and where you both edited the same line. Your prep work survives, nothing gets applied silently, and Versions keeps every draft on file so you can roll back anytime.",
              '', 'live'),
             ('Pictures in the script', 'See every slide right beside its cue.',
-             "Drop any image inline or onto its own line, and it scrolls smoothly alongside the words. Pull slide thumbnails from a folder, or import a PowerPoint or Keynote deck__BETA__ to attach each slide image straight to its matching Slide cue. A slide range cue covers slides without spoken script, and bringing in a new version of the deck matches slides one by one. You, the presenter and the crew always know what's on screen, and every picture carries cleanly through to Word and PDF exports.",
+             "Drop any image inline or onto its own line, and it scrolls smoothly alongside the words. Pull slide thumbnails from a folder, or import a PowerPoint or Keynote deck__BETA__ to attach each slide image straight to its matching Slide cue. A slide range cue covers slides without spoken script, and bringing in a new version of the deck matches slides one by one. You, the presenter, and the crew always know what's on screen, and every picture carries cleanly through to Word and PDF exports.",
              '', 'live'),
             ('More than one language', 'One script per language, one click to choose.',
              "Clients send multilingual scripts three ways: a Word table with one column per language, one section per language in a single file, or a separate file for each. Cadence detects the languages, asks which one to import (or builds a script for each), and flags anything it left out, like footnotes or mixed-language lines. Slide images sitting in a column beside the text can become Slide-cue pictures automatically.",
              '', 'beta'),
             ('Master script', 'Multiple scripts, one master document.',
-             "Stitch every script for an event into a single document, complete with a segment cue and a named bookmark for each. Number them in your runlist, or let the crew tap the rows they need on the pull page to download one combined PDF, Word or plain text master.",
+             "Stitch every script for an event into a single document, complete with a segment cue and a named bookmark for each. Number them in your runlist, or let the crew tap the rows they need on the pull page to download one combined PDF, Word, or plain text master.",
              '', 'beta'),
             ('Script tools', 'Clean up a script in minutes.',
              'Convert paragraphs, strip to plain text, and run find and replace across your script while keeping every speaker style and cue completely untouched.',
@@ -89,25 +89,25 @@ PILLARS = [
         card="Calm, tactile control built for the person sitting behind the console.",
         feats=[
             ('The live bar', 'Everything for the live moment.',
-             "One clean bar across the top handles everything that moves the prompter: Play, Speed, bookmark stepping, cue to cue, page jumps, Jump here, Snap back and Snap next, and Zoom, with Top and End marked in red at the far right. The Armed indicator sits right above the script. The tools that change the script at your cursor (Add cue, Segment +, the timer cues, Add bookmark, Bookmark list, Q2Q stops and Number Slides) live in a separate bar along the bottom, so your live controls stay clear of accidental clicks.",
+             "One clean bar across the top handles everything that moves the prompter: Play, Speed, bookmark stepping, cue to cue, page jumps, Jump here, Snap back and Snap next, and Zoom, with Top and End marked in red at the far right. The Armed indicator sits right above the script. The tools that change the script at your cursor (Add cue, Segment +, the timer cues, Add bookmark, Bookmark list, Q2Q stops, and Number Slides) live in a separate bar along the bottom, so your live controls stay clear of accidental clicks.",
              'Both bars of the operator window in one picture, the top bar labeled moves the prompter and the bottom bar labeled changes the script at your cursor.', 'live'),
             ('Stream Deck', 'Hands-on control, built right in.',
-             "Build and edit your rig right inside Cadence: keys, pages and dials, with every available action listed beside your deck. You'll want a Stream Deck + or + XL for the dials, which put speed, text size and bookmarks right under your fingers, though any model works for keys. Keys are color-framed by category, and the Plus XL comes with a one-page starter layout ready to go. Rearrange it however you like: the pictures show a Stream Deck + and a + XL set up the way I run them. If you're ever traveling light, nearly every key has a shortcut, a menu row or an on-screen button that does the same thing.",
+             "Build and edit your rig right inside Cadence: keys, pages, and dials, with every available action listed beside your deck. You'll want a Stream Deck + or + XL for the dials, which put speed, text size, and bookmarks right under your fingers, though any model works for keys. Keys are color-framed by category, and the Plus XL comes with a one-page starter layout ready to go. Rearrange it however you like: the pictures show a Stream Deck + and a + XL set up the way I run them. If you're ever traveling light, nearly every key has a shortcut, a menu row, or an on-screen button that does the same thing.",
              'A Stream Deck + beside a Stream Deck + XL, both set up for Cadence.', 'live'),
             ('Edit on the fly', 'There is no edit mode.',
              "Click anywhere and start typing, even while the script is actively scrolling. Edit below the reading line and the prompter won't jump an inch. The presenter simply sees the updated words when they get there. Hit Jump here on the top bar to snap the prompter straight to your cursor and show the presenter an exact spot.",
              'The editor with a new edit in it and the Editor \u00b7 held strip showing the Resume following button.', 'live'),
             ('One search box', 'Just type what you want to do.',
-             "Press Command-K (or click Search on the bottom bar) and start typing. Cadence searches every action, menu item and manual page at once, shows you where it lives and its shortcut, and runs it when you hit Enter. Settings open right in place, so you never have to go hunting through drawers. It even forgives small slips like \"and\" for \"&\", missing hyphens or words run together.",
+             "Press Command-K (or click Search on the bottom bar) and start typing. Cadence searches every action, menu item, and manual page at once, shows you where it lives and its shortcut, and runs it when you hit Enter. Settings open right in place, so you never have to go hunting through drawers. It even forgives small slips like \"and\" for \"&\", missing hyphens or words run together.",
              'The command palette open with a half-typed search and three results, each with its shortcut.', 'live'),
             ('Organized controls', 'Tools grouped by the job.',
-             "Prepare, Text, Prompter, Timer, Runlist, Collaboration, Show and Controllers each live in their own drawer along the left rail, keeping your editor as big as possible. The menu bar mirrors those drawers, every setting shows its scope (this script, this computer or new scripts), and a click on the reset arrow puts a changed setting right back. File \u25b8 Defaults compares every setting against your defaults and Cadence's own. The Show, Timer, Prompter and Controllers menus jump straight to the matching drawer and tray, with NDI tucked inside the Show drawer.",
+             "Prepare, Text, Prompter, Timer, Runlist, Collaboration, Show, and Controllers each live in their own drawer along the left rail, keeping your editor as big as possible. The menu bar mirrors those drawers, every setting shows its scope (this script, this computer, or new scripts), and a click on the reset arrow puts a changed setting right back. File \u25b8 Defaults compares every setting against your defaults and Cadence's own. The Show, Timer, Prompter, and Controllers menus jump straight to the matching drawer and tray, with NDI tucked inside the Show drawer.",
              'The rail and the Timer drawer open beside the script.', 'live'),
             ('Any display setup', 'Works with the rig you have.',
-             'Pick Auto, Extended or Mirrored mode. Mirror or flip the output for a beam-splitter, or invert it for dark text on white. A built-in Before you go live checklist helps you verify every detail before doors open.',
+             'Pick Auto, Extended, or Mirrored mode. Mirror or flip the output for a beam-splitter, or invert it for dark text on white. A built-in Before you go live checklist helps you verify every detail before doors open.',
              'The Show tab with the three display-mode icons, plus the Before you go live checklist.', 'live'),
             ('Runlists', 'Multiple scripts, one continuous scroll.',
-             'Line up every script for the event in show order and let the reading flow seamlessly from one into the next, with no stopping to open the next file. One key, button or shortcut jumps cleanly to the next script.',
+             'Line up every script for the event in show order and let the reading flow seamlessly from one into the next, with no stopping to open the next file. One key, button, or shortcut jumps cleanly to the next script.',
              '', 'live'),
             ('Bookmarks', 'Hop to any spot.',
              'Drop a bookmark right at your cursor, jump cleanly between them, and view your full list at a glance.',
@@ -115,17 +115,17 @@ PILLARS = [
             ('Settings that travel', 'Carry your setup to any machine.',
              'Export Settings saves your entire configuration into a single file. Import Settings loads it straight onto another Mac or PC, so your backup machine or a second desk runs exactly the way you expect.',
              '', 'beta'),
-            ('Phone remote', 'Play, pause and speed control from your phone.',
-             "Turn on the phone remote, set a PIN and scan the QR code. Play, pause, speed, rewind, fast forward and bookmark jumps work right from your phone over the venue network, and your phone keeps its screen awake while you're running.",
+            ('Phone remote', 'Play, pause, and speed control from your phone.',
+             "Turn on the phone remote, set a PIN, and scan the QR code. Play, pause, speed, rewind, fast forward, and bookmark jumps work right from your phone over the venue network, and your phone keeps its screen awake while you're running.",
              '', 'beta'),
             ('Cue to cue', 'Jump straight from cue to cue.',
              'Q2Q hops to the previous or next cue of the types you pick (starting with slides and videos), letting you fly through technical rehearsals without endless scrolling.',
              '', 'beta'),
             ('NDI output', 'Send your prompter and timer as NDI sources.',
-             "Put the live prompter feed and the speaker timer onto the network as NDI sources for switchers, multiviewers or streams. Choose a transparent or chroma-key green background, toggle Timer on NDI right from the Timer drawer, and run Check this machine before showtime to make sure your computer handles the load. Mac first. Windows hasn't been tested yet.",
+             "Put the live prompter feed and the speaker timer onto the network as NDI sources for switchers, multiviewers, or streams. Choose a transparent or chroma-key green background, toggle Timer on NDI right from the Timer drawer, and run Check this machine before showtime to make sure your computer handles the load. Mac first. Windows hasn't been tested yet.",
              '', 'beta'),
             ('Never lose the script', 'A crash won\'t cost you the show.',
-             "Cadence autosaves continuously to a recovery file as you type, maintains a dedicated Backups folder, and preserves every version you import. Before doors open, the checklist walks you through Do Not Disturb, notifications and power settings. Even save and close prompts use Cadence's own dialog box, so a hidden system pop-up can never freeze behind the prompter.",
+             "Cadence autosaves continuously to a recovery file as you type, maintains a dedicated Backups folder, and preserves every version you import. Before doors open, the checklist walks you through Do Not Disturb, notifications, and power settings. Even save and close prompts use Cadence's own dialog box, so a hidden system pop-up can never freeze behind the prompter.",
              '', 'live'),
         ]),
     dict(
@@ -140,49 +140,49 @@ PILLARS = [
              "The time remaining, the segment name, and a live pace estimate that says plainly whether they're running over or under. The presenter never has to do mental math on stage.",
              'The speaker timer page: Time remaining as the large clock on the right half; real time, the estimate (for example -0:12), Coming up and pace on the left.', 'live'),
             ('Timer cues in the script', 'Timer events fire right from the text.',
-             "Set, start and finish cues live directly inside the script. An indicator above the editor shows how many cues are armed and turns red if they're off. Pressing Play arms them automatically, so scrolling past a Start cue kicks off the clock by itself. Pressing Pause disarms them and stops the clock. If a segment wraps with time to spare, the clock stops and turns green.",
+             "Set, start, and finish cues live directly inside the script. An indicator above the editor shows how many cues are armed and turns red if they're off. Pressing Play arms them automatically, so scrolling past a Start cue kicks off the clock by itself. Pressing Pause disarms them and stops the clock. If a segment wraps with time to spare, the clock stops and turns green.",
              'Two crops of the live bar side by side: Armed 5 in green and OFF 5 in red. Optionally the green finished clock.', 'live'),
             ('Clock colors', 'A timer that shows its state at a glance.',
-             'Five states (Running, Warning, Over time, Paused and Finished early) each get their own color, saved right with the script.',
+             'Five states (Running, Warning, Over time, Paused, and Finished early) each get their own color, saved right with the script.',
              '', 'beta'),
             'Cues',
             ('Coming up', 'See the next cue before it hits.',
              'A live list of upcoming cues ahead of the reading line, each showing the exact time until it lands. As you scroll past each cue, the list advances automatically, so you always know what\'s next without hunting through the script.',
              'The operator window with the Coming up list under the timer card, showing four or five cues in different colors with times.', 'live'),
             ('Cue colors', 'Cues you can read from across the room.',
-             'Video, slides, general, audio and bookmarks each come color-coded out of the box, and you can build custom cues of your own. Adjust any color to match the system your crew already uses.',
+             'Video, slides, general, audio, and bookmarks each come color-coded out of the box, and you can build custom cues of your own. Adjust any color to match the system your crew already uses.',
              'The script editor with all five cue types visible in a few lines of a realistic script.', 'live'),
             ('The cue sheet', 'The whole show as a live rundown.',
              "The cue sheet opens in a tab for you, or on a live page for the crew, turning every cue in your script (or across an entire runlist) into a clean rundown. Every row starts checked Ready. Uncheck one to flag a missing asset or an item to confirm, and the row turns red for the whole crew. Export it as a PDF or spreadsheet, or copy it straight into an email. It's a stage manager's rundown, built automatically from the script itself.",
              '', 'live'),
             'Collaboration',
             ('Share the show', 'Put the clock, cues, and script on any screen.',
-             "Flip sharing on to open the speaker timer, the cue sheet and the live script__BETA__ in any browser, with no extra cables or software. Crew on the venue network can follow the script in its actual colors as it tracks the reading line, adjust their own text size, and use an Edit PIN to tap a line or highlight words and send suggestions straight to your Prepare tab. Need to loop in someone off-site? Even if they're not in the building, or even in the country, Cadence can share a link that works right over the internet. When the session wraps, Sign everyone out in the Collaboration drawer clears every crew login at once.",
+             "Flip sharing on to open the speaker timer, the cue sheet, and the live script__BETA__ in any browser, with no extra cables or software. Crew on the venue network can follow the script in its actual colors as it tracks the reading line, adjust their own text size, and use an Edit PIN to tap a line or highlight words and send suggestions straight to your Prepare tab. Need to loop in someone off-site? Even if they're not in the building, or even in the country, Cadence can share a link that works right over the internet. When the session wraps, Sign everyone out in the Collaboration drawer clears every crew login at once.",
              'The Share on the network switch with the listed addresses and viewer count, next to the timer page open in a browser window.', 'live'),
             ('Pull the script', 'The crew grabs the latest draft without asking.',
-             'When sharing is on, the crew page includes a Pull script button protected by an Edit PIN. Crew members can download the current script as a PDF, Word or text file right onto their own phone or laptop. Nobody has to tap you on the shoulder mid-show for the latest file.',
+             'When sharing is on, the crew page includes a Pull script button protected by an Edit PIN. Crew members can download the current script as a PDF, Word, or text file right onto their own phone or laptop. Nobody has to tap you on the shoulder mid-show for the latest file.',
              '', 'live'),
-            ('Print, PDF and Word', 'Clean hard copies in a few clicks.',
-             'For anyone in the room who still trusts paper, print the script or export it as a PDF, a Word document or plain text. Everything lands at a comfortable reading size in print-safe colors, with speaker names and page numbers in place. You can even export a whole runlist as one combined PDF.',
+            ('Print, PDF, and Word', 'Clean hard copies in a few clicks.',
+             'For anyone in the room who still trusts paper, print the script or export it as a PDF, a Word document, or plain text. Everything lands at a comfortable reading size in print-safe colors, with speaker names and page numbers in place. You can even export a whole runlist as one combined PDF.',
              '', 'live'),
         ]),
     dict(
         slug='a-better-read', name='A better read', audiences='Presenter',
         h1='The best prompter is the one your presenter never notices.',
-        lede="When the prompter does its job, the presenter connects with the audience instead of struggling to read the screen. Tricky words and names get built-in pronunciation help. Style, margins, reading marker and speed are dialed in once and saved.",
-        card="A natural read for the presenter, with built-in help to get hard words, names and pace right.",
+        lede="When the prompter does its job, the presenter connects with the audience instead of struggling to read the screen. Tricky words and names get built-in pronunciation help. Style, margins, reading marker, and speed are dialed in once and saved.",
+        card="A natural read for the presenter, with built-in help to get hard words, names, and pace right.",
         feats=[
             ('Speaker Style', 'Every speaker in their own style.',
-             "The Speaker Style tab lists every style in the script, and each row has its own name, color, size, alignment, line spacing and snap setting. Collections keep a saved set of styles for each client or show, and the Default collection is what a new script starts with. Select lines and pick a style in the Text drawer, or let Prepare find the speaker names in the script and give each one a color. The color palettes are built to read cleanly against black, whether the color goes on the text or serves as a background highlight.",
+             "The Speaker Style tab lists every style in the script, and each row has its own name, color, size, alignment, line spacing, and snap setting. Collections keep a saved set of styles for each client or show, and the Default collection is what a new script starts with. Select lines and pick a style in the Text drawer, or let Prepare find the speaker names in the script and give each one a color. The color palettes are built to read cleanly against black, whether the color goes on the text or serves as a background highlight.",
              'The Speaker Style tab with three styles, their swatches and sizes, and the sample preview.', 'live'),
             ('The reading marker', 'A marker you can see and a line you can follow.',
-             "Pick the marker's shape, side, color and size, along with exactly where the reading line sits on the prompter. Save it once as your default.",
+             "Pick the marker's shape, side, color, and size, along with exactly where the reading line sits on the prompter. Save it once as your default.",
              'The Marker and margins sheet showing the marker shape tiles, the swatches and the reading-line setting.', 'live'),
             ('Margins and alignment', 'Text placed right where the presenter wants it.',
-             'Start with Tight, Normal or Wide margins, or dial in your own exact left and right numbers. Align the script left, centered or right.',
+             'Start with Tight, Normal, or Wide margins, or dial in your own exact left and right numbers. Align the script left, centered, or right.',
              'The margins settings in the Prompter tab, and the Text tab showing alignment.', 'live'),
             ('Snap to stanza', 'Verses and lyrics that move a stanza at a time.',
-             "Choose which lines snap: turn on Snap for a speaker style (like \"Choir\"), select specific lines and press Snap, or apply it to the whole script. The prompter glides one stanza to the top of the display while the next waits below it. Any stanza taller than the screen gets page stops of its own, and Find page breaks suggests the cleanest places to split the lines. Every stop appears as a mark in the margin, and you can add stops by hand whenever you want them at precise moments. Once you scroll into a run of stanzas, step through one stop at a time using Snap next on the top bar, a Stream Deck or even the phone remote. While a run plays, the marker rides high so each stanza lands level with it, then glides back down after the last one.",
+             "Choose which lines snap: turn on Snap for a speaker style (like \"Choir\"), select specific lines and press Snap, or apply it to the whole script. The prompter glides one stanza to the top of the display while the next waits below it. Any stanza taller than the screen gets page stops of its own, and Find page breaks suggests the cleanest places to split the lines. Every stop appears as a mark in the margin, and you can add stops by hand whenever you want them at precise moments. Once you scroll into a run of stanzas, step through one stop at a time using Snap next on the top bar, a Stream Deck, or even the phone remote. While a run plays, the marker rides high so each stanza lands level with it, then glides back down after the last one.",
              'Three or more lines of a snapped stanza, with the START chevron mark, a mid mark and LAST in the margin.', 'beta'),
             ('Back up smoothly', 'Go backward just as easily as forward.',
              "Turn the speed dial past zero and the script scrolls smoothly in reverse. If a presenter repeats a line, you can back right up without a jarring jump. Need to move a little faster without touching the dial? Hit Rewind to zip back, or use Fast Forward to glide ahead.",
@@ -201,30 +201,30 @@ PILLARS = [
 # All were captured from the app with a fictional sample script; see docs/screenshots in the Cadence repo.
 SHOTS = {
     "Speaker timer": ("time-speaker-timer.png", "Two screens side by side. What the speaker sees: the prompter text with the clock and a small green estimate, 19 seconds under. What the crew sees: the speaker timer page with the estimate under time, Coming up with the time to each cue, the time remaining as a large clock, and the next segment."),
-    "Coming up": ("time-coming-up.png", "Coming up in the operator window: audio, video and general cues, then the CEO keynote timer set and its slides, each with its kind, name and the time until it."),
+    "Coming up": ("time-coming-up.png", "Coming up in the operator window: audio, video, and general cues, then the CEO keynote timer set and its slides, each with its kind, name, and the time until it."),
     "Timer cues in the script": ("time-timer-cues.png", "The live bar indicator reading Armed in green, and the same indicator reading OFF in red when the cues are disarmed."),
     "Share the show": ("time-share.png", "The Collaboration drawer with Sharing on the local network and the View and Edit PINs, next to the speaker timer page it shares."),
-    "Cue colors": ("time-cue-colors.png", "The script editor with a bookmark mark and general, audio, slide and video cues each in its own color, above a timer cue and the first lines of the script."),
-    "Stream Deck": ("run-stream-deck.png", "The Stream Deck + beside the Stream Deck + XL, both running Cadence: color-framed keys by category, a touch strip with live readouts for bookmark, timer cues, text size and speed, and dials underneath. The + XL shows 36 keys and six dials."),
+    "Cue colors": ("time-cue-colors.png", "The script editor with a bookmark mark and general, audio, slide, and video cues each in its own color, above a timer cue and the first lines of the script."),
+    "Stream Deck": ("run-stream-deck.png", "The Stream Deck + beside the Stream Deck + XL, both running Cadence: color-framed keys by category, a touch strip with live readouts for bookmark, timer cues, text size, and speed, and dials underneath. The + XL shows 36 keys and six dials."),
     "Snap to stanza": ("snap-marks.png", "A snapped hymn on the prompter: a START mark beside the first stanza, a smaller mark at the next stop and LAST beside the final stanza, with the reading marker at the left edge."),
-    "Speaker Style": ("read-speaker-styles.png", "The Speaker Style tab: each style with a name, color, size, alignment, spacing and snap, the collection they belong to, and a sample at each speaker's color."),
-    "The reading marker": ("read-marker.png", "The Marker group of the Prompter tab: the marker shapes, its side, its color, its size and the bookmark color."),
+    "Speaker Style": ("read-speaker-styles.png", "The Speaker Style tab: each style with a name, color, size, alignment, spacing, and snap, the collection they belong to, and a sample at each speaker's color."),
+    "The reading marker": ("read-marker.png", "The Marker group of the Prompter tab: the marker shapes, its side, its color, its size, and the bookmark color."),
     "Margins and alignment": ("read-margins-alignment.png", "The Prompter tab with the text size, line spacing, the Normal and Custom margins with left and right numbers, and the settings new scripts start with."),
     "Back up smoothly": ("read-backward.mp4", "The script scrolling forward, then backward, as the speed passes through zero."),
-    "The live bar": ("show-live-bar.png", "The operator window with both bars: the live bar across the top (play, speed, zoom, bookmarks, cue to cue, page jumps, snap and the Armed indicator) moves the prompter, and the bar under the script (Add cue, Segment, Set, Start, Finish, bookmarks, Edit size) changes the script at your cursor."),
+    "The live bar": ("show-live-bar.png", "The operator window with both bars: the live bar across the top (play, speed, zoom, bookmarks, cue to cue, page jumps, snap, and the Armed indicator) moves the prompter, and the bar under the script (Add cue, Segment, Set, Start, Finish, bookmarks, Edit size) changes the script at your cursor."),
     "Edit on the fly": ("edit-held.png", "The operator window while the script plays and the editor is held: the strip above the script reads Editor held with a Resume following button, the prompter still leads, and the cursor sits in the line being changed."),
     "One search box": ("show-palette.png", "The search box open with find typed, listing the find commands, with their shortcuts."),
-    "Organized controls": ("show-ribbon-timer.png", "The operator window with the Timer drawer open at the left, with its Clock colors fold, beside the script, the preview and the timer card."),
-    "Any display setup": ("show-display-checklist.png", "The Show tab with the Auto, Extended and Mirrored display buttons, and the Before you go live buttons, beside the Before you go live checklist."),
-    "Import & Prep": ("prep-import-window.png", "The Prepare tab beside Script, with the Working on list at left (This script marked LIVE, and a staged Import & Prep file) and a raw client script pasted in: speaker names typed inline, notes in brackets and uneven spacing."),
-    "Prepare tab": ("prep-prepare-window.png", "The Prepare tab on the same file: the six steps along the top (Set aside, Spacing, Readability, Speakers, Stage directions, Cues), what Clean up the spacing does and its choices, with Apply, Next and Send on at the bottom."),
-    "Bring in a new version": ("prep-new-version.png", "The Bring in a new version screen listing the client's changes, each marked Theirs or Same, with your script, the client's change and the result side by side."),
+    "Organized controls": ("show-ribbon-timer.png", "The operator window with the Timer drawer open at the left, with its Clock colors fold, beside the script, the preview, and the timer card."),
+    "Any display setup": ("show-display-checklist.png", "The Show tab with the Auto, Extended, and Mirrored display buttons, and the Before you go live buttons, beside the Before you go live checklist."),
+    "Import & Prep": ("prep-import-window.png", "The Prepare tab beside Script, with the Working on list at left (This script marked LIVE, and a staged Import & Prep file) and a raw client script pasted in: speaker names typed inline, notes in brackets, and uneven spacing."),
+    "Prepare tab": ("prep-prepare-window.png", "The Prepare tab on the same file: the six steps along the top (Set aside, Spacing, Readability, Speakers, Stage directions, Cues), what Clean up the spacing does and its choices, with Apply, Next, and Send on at the bottom."),
+    "Bring in a new version": ("prep-new-version.png", "The Bring in a new version screen listing the client's changes, each marked Theirs or Same, with your script, the client's change, and the result side by side."),
     "Pictures in the script": ("prep-pictures.png", "A slide's picture on a line of its own in the script, with the words of the script above and below it."),
     "Pronunciation helper": ("read-pronunciations.png", "The Pronunciations tab."),
-    "The cue sheet": ("time-cue-sheet.png", "The cue sheet on its live page for the crew: every cue as a row with its time, kind, name and length, segments with the pace they need, and Copy, Print and Plan and last run buttons."),
-    "Print, PDF and Word": ("prep-print.png", "Page one of a printed script: speaker names above their lines, cues in boxes in print-safe colors, and the date and page number in the margins."),
-    "Pull the script": ("time-pull-phone.png", "The pull page on a phone: the script now in the prompter with PDF, Word and Text buttons, and sections for a runlist and a crew folder."),
-    "Never lose the script": ("show-checklist.png", "The Before you go live checklist: Do Not Disturb, notification settings, AirDrop and chat apps, each with a box to tick."),
+    "The cue sheet": ("time-cue-sheet.png", "The cue sheet on its live page for the crew: every cue as a row with its time, kind, name, and length, segments with the pace they need, and Copy, Print, and Plan and last run buttons."),
+    "Print, PDF, and Word": ("prep-print.png", "Page one of a printed script: speaker names above their lines, cues in boxes in print-safe colors, and the date and page number in the margins."),
+    "Pull the script": ("time-pull-phone.png", "The pull page on a phone: the script now in the prompter with PDF, Word, and Text buttons, and sections for a runlist and a crew folder."),
+    "Never lose the script": ("show-checklist.png", "The Before you go live checklist: Do Not Disturb, notification settings, AirDrop, and chat apps, each with a box to tick."),
     "Script tools": ("docs-before-after.png", "A script pasted in as it arrived, with speaker names and notes typed inline, next to the same passage after Prepare, with colored speakers and cues."),
 }
 
@@ -276,10 +276,10 @@ pillar_cards = "".join(
     f'<article><p class="eyebrow">{p["audiences"]}</p><h3><a href="{p["slug"]}.html">{p["name"]}</a></h3><p>{p["card"]}</p></article>' for p in PILLARS)
 
 P["index.html"] = ("Cadence Prompt: teleprompter software for the whole show",
-    "Teleprompter software built for the presenter, the operator and the crew.",
+    "Teleprompter software built for the presenter, the operator, and the crew.",
     hero("You don&rsquo;t have to live with it.",
          "We keep putting up with the same prompter pain points because we assume they come with the job. They don&rsquo;t. Cadence Prompt is the prompter, rebuilt for the whole room: prep in minutes, run the show with your hands on it, and a crew that sees the same clock you do.") +
-    f'<section class="wrap shot"><figure class="shotfig hero-shot"><a href="assets/shots/home-hero.png"><img src="assets/shots/home-hero.png" alt="The Cadence Prompt operator window: the live bar across the top, the ribbon at left, the script with colored speakers and cues, and the preview, timer card and Coming up in the side column."></a></figure></section>'
+    f'<section class="wrap shot"><figure class="shotfig hero-shot"><a href="assets/shots/home-hero.png"><img src="assets/shots/home-hero.png" alt="The Cadence Prompt operator window: the live bar across the top, the ribbon at left, the script with colored speakers and cues, and the preview, timer card, and Coming up in the side column."></a></figure></section>'
         '<section class="wrap live"><h2>Sound familiar?</h2><ul class="pains">'
     '<li><a class="pain" href="prep.html"><span class="prob">Hours spent formatting a script by hand.</span>' + CHEV + '<span class="sol">Import &amp; Prep takes it from raw doc to show-ready in minutes.</span></a></li>'
     '<li><a class="pain" href="prep.html"><span class="prob">A brand-new script lands at five o\'clock, and you\'re back at square one.</span>' + CHEV + '<span class="sol">Drop it in, see every change side by side, and keep your prep intact.</span></a></li>'
@@ -288,13 +288,13 @@ P["index.html"] = ("Cadence Prompt: teleprompter software for the whole show",
     '<li><a class="pain" href="time-and-cues.html"><span class="prob">Script notes arrive in a group text, and half of them get buried.</span>' + CHEV + '<span class="sol">Crew suggest changes right on the script, and every note lands cleanly in Prepare. <span class="badge">Beta</span></span></a></li>'
     '</ul><p class="built">I built Cadence Prompt after years of working around the exact same headaches. <a href="about.html">Read why &rarr;</a></p></section>'
     '<section class="wrap three"><h2>Three promises, one room</h2><div class="cols">'
-    '<article><h3><a href="run-the-show.html">Operators</a></h3><p>Prep in minutes, then run the show with every control right under your hands. A clean interface built around the live bar, a command palette and full Stream Deck control. Plus a phone remote <span class="badge">Beta</span> for the moments you need to step away from the desk.</p></article>'
-    '<article><h3><a href="a-better-read.html">Presenters</a></h3><p>They walk on stage knowing their words, their pace and their time. Every speaker can have their own style, a reading line that&rsquo;s effortless to follow, and a clock they can trust without looking away from the script.</p></article>'
-    '<article><h3><a href="time-and-cues.html">Crews</a></h3><p>One show, one source of truth. Your crew is tired of asking, &ldquo;What&rsquo;s next? How long is left? Is that the latest?&rdquo; With Cadence, everyone sees the same clock, cues and script in any browser or phone <span class="badge">Beta</span>. Notes land on the script instead of in a text thread <span class="badge">Beta</span>, and rewrites take minutes, not overtime.</p></article>'
+    '<article><h3><a href="run-the-show.html">Operators</a></h3><p>Prep in minutes, then run the show with every control right under your hands. A clean interface built around the live bar, a command palette, and full Stream Deck control. Plus a phone remote <span class="badge">Beta</span> for the moments you need to step away from the desk.</p></article>'
+    '<article><h3><a href="a-better-read.html">Presenters</a></h3><p>They walk on stage knowing their words, their pace, and their time. Every speaker can have their own style, a reading line that&rsquo;s effortless to follow, and a clock they can trust without looking away from the script.</p></article>'
+    '<article><h3><a href="time-and-cues.html">Crews</a></h3><p>One show, one source of truth. Your crew is tired of asking, &ldquo;What&rsquo;s next? How long is left? Is that the latest?&rdquo; With Cadence, everyone sees the same clock, cues, and script in any browser or phone <span class="badge">Beta</span>. Notes land on the script instead of in a text thread <span class="badge">Beta</span>, and rewrites take minutes, not overtime.</p></article>'
     '</div></section>'
-    '<section class="wrap prose"><h2>Run it with a Stream Deck.</h2><p>Cadence runs great without a Stream Deck, but best with one. Dedicated keys for the tools you reach for most, dials for speed, text size and bookmarks, and a touch strip for the clock keep your hands right on the show. You&rsquo;ll want a Stream Deck + or + XL for the dials, though any model works. If you&rsquo;re ever traveling light, nearly every key and dial has a shortcut, a menu row or an on-screen button that does the same thing.</p></section>'
+    '<section class="wrap prose"><h2>Run it with a Stream Deck.</h2><p>Cadence runs great without a Stream Deck, but best with one. Dedicated keys for the tools you reach for most, dials for speed, text size, and bookmarks, and a touch strip for the clock keep your hands right on the show. You&rsquo;ll want a Stream Deck + or + XL for the dials, though any model works. If you&rsquo;re ever traveling light, nearly every key and dial has a shortcut, a menu row, or an on-screen button that does the same thing.</p></section>'
     '<section class="wrap prose"><h2>Learn it on the prompter.</h2><p>Cadence Prompt teaches itself. Three hands-on series come built into the app: Getting Started, Prep Like a Pro, and The Whole Room. You read each module straight off the prompter and pause to try the features live. Instant Help search and a built-in manual are right there whenever you need a quick answer. <a href="learn.html">See what&rsquo;s inside &rarr;</a></p>'
-    '<figure class="shotfig"><img src="assets/shots/help-search.png" alt="Help search with cue sheet typed in: the matching commands, menu items and manual page, each with where to find it." loading="lazy"></figure></section>'
+    '<figure class="shotfig"><img src="assets/shots/help-search.png" alt="Help search with cue sheet typed in: the matching commands, menu items, and manual page, each with where to find it." loading="lazy"></figure></section>'
     f'<section class="wrap"><h2>What makes it different</h2><div class="cols">{pillar_cards}</div></section>'
     '<section class="wrap cta"><h2>Try it on your next show.</h2><p><a class="btn" href="download.html">' + CHEV + 'Download</a></p></section>')
 
@@ -311,7 +311,7 @@ P["download.html"] = ("Get Cadence Prompt | Cadence Prompt", "Ask for a beta acc
     '<section class="wrap prose"><h2>What you need</h2><p>A Mac or Windows computer. You don&rsquo;t need a Stream Deck to run Cadence. It works great without one, and even better with one.</p><h2>Trial and pricing</h2><p>Every single feature is unlocked during the trial. After that, a simple subscription keeps Cadence Prompt supported and improving, and I&rsquo;ll always be upfront about what it pays for.</p></section>')
 P["help.html"] = ("Help | Cadence Prompt", "Read the Cadence Prompt manual and find answers.",
     hero("Help", "Dive into the manual, or learn right on the prompter with the built-in practice series that come with the app.", False) +
-    '<section class="wrap cols"><article><h3>The manual</h3><p>The exact same manual built into the app, complete with instant search. It covers the Learn series, Edit view and Prompt view, Prepare, Speaker Style, Runlists, the Speaker timer, the Cue sheet, the crew pages, NDI feeds, Snap to stanza and a reference for every drawer.</p><p><a class="btn" href="manual.html">' + CHEV + 'Read the manual</a></p></article>'
+    '<section class="wrap cols"><article><h3>The manual</h3><p>The exact same manual built into the app, complete with instant search. It covers the Learn series, Edit view and Prompt view, Prepare, Speaker Style, Runlists, the Speaker timer, the Cue sheet, the crew pages, NDI feeds, Snap to stanza, and a reference for every drawer.</p><p><a class="btn" href="manual.html">' + CHEV + 'Read the manual</a></p></article>'
     '<article><h3>In the app</h3><p>Press Command-Shift-/ (Control-Shift-/ on Windows) and type what you&rsquo;re looking for. Help search shows you right where the control lives and gives you its shortcut. The built-in Learn series walk you through each feature live at a practice stop.</p></article>'
     '<article><h3>Still stuck?</h3><p>Email <a href="mailto:CadencePrompt@gmail.com">CadencePrompt@gmail.com</a> anytime. If you&rsquo;re running a beta build, you can also go to Help, then Report a Problem or Request a Feature right inside the app. <a href="support.html">Support</a></p></article></section>'
     '<section class="wrap"><p class="note">The manual tracks the newest beta build, so a few pages cover features still marked Beta on the feature pages. NDI support is Mac first.</p></section>')
@@ -320,8 +320,8 @@ P["changelog.html"] = ("Changelog | Cadence Prompt", "What changed in each versi
     '<h2>0.2.1 · November 21, 2026</h2><ul>'
     '<li>Slide pictures at import on a PC (Beta): when PowerPoint is installed, importing a PowerPoint deck with Include slide pictures has PowerPoint draw the slides, and the pictures come in with the cues. Choose a PDF of the slides is only offered if PowerPoint cannot do it.</li></ul>'
     '<h2>0.2.0 · November 20, 2026</h2><ul>'
-    '<li>Learn series (new): Cadence now opens on Getting Started the first time you run it. Getting Started (ten modules), Prep Like a Pro (nine modules) and The Whole Room (nine modules) are practice scripts that teach each feature at a stop on the prompter. They have their own <a href="learn.html">Learn pages</a>, and the old Welcome items leave the Help menu.</li>'
-    '<li>Insert from another script (Beta): open an older script in a read-only viewer beside the one you are editing, then copy lines from it and paste them in. Cues and speaker styles come along, and Cadence asks how to number slides only when they do not already follow on. Works in both the Extended and Mirrored windows, reads Word, PowerPoint, Keynote, Pages, PDF and Telescript, has its own Find, and can send selected lines to Import &amp; Prep.</li>'
+    '<li>Learn series (new): Cadence now opens on Getting Started the first time you run it. Getting Started (ten modules), Prep Like a Pro (nine modules), and The Whole Room (nine modules) are practice scripts that teach each feature at a stop on the prompter. They have their own <a href="learn.html">Learn pages</a>, and the old Welcome items leave the Help menu.</li>'
+    '<li>Insert from another script (Beta): open an older script in a read-only viewer beside the one you are editing, then copy lines from it and paste them in. Cues and speaker styles come along, and Cadence asks how to number slides only when they do not already follow on. Works in both the Extended and Mirrored windows, reads Word, PowerPoint, Keynote, Pages, PDF, and Telescript, has its own Find, and can send selected lines to Import &amp; Prep.</li>'
     '<li>Stops (Beta): Snap marks are now called stops, drawn as a chevron-and-bar mark in the margin of the prompter and the edit pane. START and LAST mark the ends of a run. Add stop here places a stop by hand on any line.</li>'
     '<li>Hold at snap (Beta): playing into a run of snapping stanzas drops the speed to zero and glides the stanza to the top. The wheel and speed dial are ignored for a moment so a hand still turning the speed does not raise it again.</li>'
     '<li>Snap keys and buttons (Beta): Snap back and Snap next step one stanza stop at a time, on the top bar and as Stream Deck keys. The top bar buttons read SNAP and are greyed until some line snaps. The Q2Q buttons read Q2Q up and Q2Q down.</li>'
@@ -335,34 +335,34 @@ P["changelog.html"] = ("Changelog | Cadence Prompt", "What changed in each versi
     '<li>Fixes: the Timer count toggle no longer resets the clock. Opening a script clears the old bookmarks from the deck and knob. Opening a runlist now closes the open script first. Menu items like Import &amp; Prep keep their ampersand.</li></ul>'
     '<h2>0.1.2 · November 11, 2026</h2><ul>'
     '<li>Snap to stanza (Beta): a line, or a whole style, can snap, so the page keys stop at stanzas; a stanza taller than the display gets page stops of its own, and Cadence offers to find the best page breaks.</li>'
-    '<li>Viewer pages (Beta): the Timer, Cue sheet and Script pages share one navigation, with a phone layout and separate View and Edit PINs.</li>'
-    '<li>NDI Prompter picture (Beta): Opaque, Transparent or Green background, with an outline, for a keyer. The prompter display has a Green background too.</li>'
-    '<li>A key struck twice inside 0.3 seconds now does its job once, for the page keys, cue to cue and bookmarks.</li>'
+    '<li>Viewer pages (Beta): the Timer, Cue sheet, and Script pages share one navigation, with a phone layout and separate View and Edit PINs.</li>'
+    '<li>NDI Prompter picture (Beta): Opaque, Transparent, or Green background, with an outline, for a keyer. The prompter display has a Green background too.</li>'
+    '<li>A key struck twice inside 0.3 seconds now does its job once, for the page keys, cue to cue, and bookmarks.</li>'
     '<li>Drawers: the Prompter drawer has folds that remember if they are open, and Network is split into NDI and Collaboration. Help search now points at the control it finds.</li>'
-    '<li>The Stream Deck page has shorter key captions, new VIEW MARKS, VIEW CUES and SNAP keys and a Coming up dial.</li>'
+    '<li>The Stream Deck page has shorter key captions, new VIEW MARKS, VIEW CUES, and SNAP keys, and a Coming up dial.</li>'
     '<li>The Text roll is no longer part of this build.</li></ul>'
     '<h2>0.1.1 · October 31, 2026</h2><ul>'
     '<li>Help, then Report a Problem or Request a Feature, gathers what you tell it with your app and computer details, a fixed list of settings and script sizes, to copy or save as a file. It is in beta builds only.</li>'
     '<li>Mark That Moment (Command-Option-J, or Control-Alt-J on Windows) stamps a short record kept in memory, so a report can show when the scroll jumped. Nothing is written to disk.</li></ul>'
-    '<h2>0.1.0 · October 30, 2026</h2><ul><li>The first beta, for Mac (Apple Silicon and Intel) and Windows: Import &amp; Prep, the live bar, runlists, timer cues, the speaker timer and crew pages, Stream Deck control and the presenter settings described on the feature pages.</li></ul>'
+    '<h2>0.1.0 · October 30, 2026</h2><ul><li>The first beta, for Mac (Apple Silicon and Intel) and Windows: Import &amp; Prep, the live bar, runlists, timer cues, the speaker timer and crew pages, Stream Deck control, and the presenter settings described on the feature pages.</li></ul>'
     '<p class="note">New beta builds are listed here the day they go out.</p></section>')
 P["support.html"] = ("Support | Cadence Prompt", "Contact and support.",
     hero("Support", "Run into a snag? Tell me what happened.", False) + '<section class="wrap prose"><p>Email <a href="mailto:CadencePrompt@gmail.com">CadencePrompt@gmail.com</a> and include your app version along with what you were doing when it came up.</p><p>Tell me what&rsquo;s working and what still needs fixing. If something&rsquo;s broken, I&rsquo;m ready to make it right. Share your wins too. Hearing what saved you on a real show tells me exactly what to protect.</p></section>')
 P["about.html"] = ("About | Cadence Prompt", "Why Cadence Prompt exists.",
     hero("Why I built Cadence Prompt", "Eighteen years of live shows, and one tool I got tired of working around.", False) +
     '<section class="wrap prose">'
-    '<p>I&rsquo;ve worked in live events for eighteen years. I got my start cleaning the office for a neighbor who ran a teleprompter company, and before long I was running prompter, presentation graphics and media servers on shows of every size.</p>'
+    '<p>I&rsquo;ve worked in live events for eighteen years. I got my start cleaning the office for a neighbor who ran a teleprompter company, and before long I was running prompter, presentation graphics, and media servers on shows of every size.</p>'
     '<p>The software I used most was a great tool once. Over the years, I learned every one of its quirks and bugs by heart. I built workarounds with a Stream Deck and a long list of ways to make things more efficient, most of them using apps outside the prompter. Then one day I caught myself building tools just to make a broken tool behave, and I decided to build the right tool instead.</p>'
     '<p>The very first thing I fixed was coloring text. It used to take four or five clicks just to color a single cue: select the text, right-click, pick color, choose text or background, hit OK. Doing that for an entire script was maddening. Now it takes one click. That&rsquo;s how Cadence Prompt started: one small, annoying headache, fixed for real.</p>'
-    '<p>I named it Cadence for the feel of movement, rhythm and pace. When a prompter does its job, the presenter stops reading and starts connecting.</p>'
+    '<p>I named it Cadence for the feel of movement, rhythm, and pace. When a prompter does its job, the presenter stops reading and starts connecting.</p>'
     '<h2>What I&rsquo;m here to do</h2>'
-    '<p>I want to make live events better for presenters, operators and crews. Better enough that none of them can imagine running a show without the calm and connection Cadence Prompt brings to the room.</p>'
+    '<p>I want to make live events better for presenters, operators, and crews. Better enough that none of them can imagine running a show without the calm and connection Cadence Prompt brings to the room.</p>'
     '<p>In live events, clients are sometimes under-prepared, and the clock never stops moving. The answer isn&rsquo;t to stress about it. It&rsquo;s to be over-prepared enough to handle whatever lands at five o&rsquo;clock. I wanted a prompter that&rsquo;s just as good for the crew behind the scenes as it is for the presenter on stage. I&rsquo;m not trying to build the loudest tool in the room. I want to build the one that shows up on every gig and does exactly what it promised.</p>'
     '<h2>What I hold to</h2>'
     '<ul class="values">'
     '<li><strong>Accuracy before speed.</strong> A late change is only fast if it&rsquo;s right. Cadence shows you what changed and applies nothing silently.</li>'
     '<li><strong>Calm in the moment.</strong> The screen should never add to the pressure.</li>'
-    '<li><strong>Every seat in the room matters.</strong> The operator, the presenter and the crew each get something built for them.</li>'
+    '<li><strong>Every seat in the room matters.</strong> The operator, the presenter, and the crew each get something built for them.</li>'
     '<li><strong>Honest by default.</strong> If it&rsquo;s not built, it says coming soon. If it&rsquo;s a claim, it&rsquo;s checked.</li>'
     '<li><strong>Built from real shows.</strong> Every feature starts with a problem someone lived.</li>'
     '<li><strong>Solve what you thought you had to live with.</strong> Add value without being asked.</li></ul>'
@@ -370,7 +370,7 @@ P["about.html"] = ("About | Cadence Prompt", "Why Cadence Prompt exists.",
     '<p>Tell me what&rsquo;s working and what still needs fixing. If something&rsquo;s broken, I&rsquo;m ready to make it right. Share your wins too. Hearing what saved you on a real show tells me exactly what to protect.</p></section>')
 P["privacy.html"] = ("Privacy | Cadence Prompt", "What Cadence Prompt keeps, what leaves your computer, and what the optional Anywhere service handles.", hero("Privacy", "Cadence Prompt works on your computer. Nothing leaves it unless you switch something on. Last updated 11 November 2026.", False) + """<section class="wrap prose">
 <h2>The app on your computer</h2>
-<p>Your scripts, run sheets, pictures, settings and cue lists stay on your computer. Cadence Prompt does not send usage statistics, and an access code is checked on your computer, without contacting anyone.</p>
+<p>Your scripts, run sheets, pictures, settings, and cue lists stay on your computer. Cadence Prompt does not send usage statistics, and an access code is checked on your computer, without contacting anyone.</p>
 <p>Two things reach the internet only when you ask. If you import from a Google Docs or Drive link, Cadence fetches that link from Google. If you switch on Anywhere (below), the show goes through the online service.</p>
 <h2>Sharing on the venue network</h2>
 <p>When you switch on sharing, other devices on the same network can open the crew pages from your computer. That traffic stays on the local network and does not go through any service of mine.</p>
@@ -400,7 +400,7 @@ P["privacy.html"] = ("Privacy | Cadence Prompt", "What Cadence Prompt keeps, wha
 <h2>Questions</h2>
 <p>Write to <a href="mailto:CadencePrompt@gmail.com">CadencePrompt@gmail.com</a> with a question or a request to remove something.</p>
 </section>""")
-P["terms.html"] = ("Terms | Cadence Prompt", "The terms for using Cadence Prompt: the beta, your scripts, sharing, the trial and the limits of what I can promise.", hero("Terms", "The plain version of how Cadence Prompt works between us. Last updated November 27, 2026.", False) + """<section class="wrap prose">
+P["terms.html"] = ("Terms | Cadence Prompt", "The terms for using Cadence Prompt: the beta, your scripts, sharing, the trial, and the limits of what I can promise.", hero("Terms", "The plain version of how Cadence Prompt works between us. Last updated November 27, 2026.", False) + """<section class="wrap prose">
 <h2>Who operates Cadence Prompt</h2>
 <p>Cadence Prompt is made and run by Brad, an independent developer and working prompter operator. &ldquo;I&rdquo; means me, and &ldquo;you&rdquo; means whoever uses the app, this website, or the optional Anywhere service. Questions about any of this can be sent to <a href="mailto:CadencePrompt@gmail.com">CadencePrompt@gmail.com</a>.</p>
 <h2>This is a beta</h2>
