@@ -400,7 +400,25 @@ P["privacy.html"] = ("Privacy | Cadence Prompt", "What Cadence Prompt keeps, wha
 <h2>Questions</h2>
 <p>Write to <a href="mailto:CadencePrompt@gmail.com">CadencePrompt@gmail.com</a> with a question or a request to remove something.</p>
 </section>""")
-P["terms.html"] = ("Terms | Cadence Prompt", "Terms of use.", hero("Terms", "[Terms to write before launch.]", False))
+P["terms.html"] = ("Terms | Cadence Prompt", "The terms for using Cadence Prompt: the beta, your scripts, sharing, the trial and what I can and can&rsquo;t promise.", hero("Terms", "The plain version of how Cadence Prompt works between us. Last updated 27 November 2026.", False) + """<section class="wrap prose">
+<h2>Who I am</h2>
+<p>Cadence Prompt is made and run by me, Brad, an independent developer and working prompter operator. &ldquo;I&rdquo; means me, and &ldquo;you&rdquo; means whoever uses the app, this site or the optional Anywhere service. Questions about any of this: <a href="mailto:CadencePrompt@gmail.com">CadencePrompt@gmail.com</a>.</p>
+<h2>This is a beta</h2>
+<p>Cadence Prompt is in beta. It&rsquo;s built and tested, but features marked Beta haven&rsquo;t been battle-tested on a live show yet, and any build can have bugs. Rehearse with it, keep a backup plan for anything that matters, and tell me when something breaks. I may change, rename or remove features while the beta runs.</p>
+<h2>Your access code and the app</h2>
+<p>An access code unlocks the app on the computers of the person or team I sent it to. It works offline. Please don&rsquo;t post a code publicly or hand it to people I haven&rsquo;t sent one to. I give you the right to use Cadence Prompt for your own work, including paid shows. You may not copy it to resell or redistribute, take it apart to build a competing product, or remove its notices.</p>
+<h2>Your scripts are yours</h2>
+<p>You own your scripts, pictures, settings and everything else you create. They stay on your computer. I don&rsquo;t get a copy, I don&rsquo;t claim any rights in them, and you&rsquo;re responsible for having the right to use whatever you put in them. What leaves your computer, and when, is described on the <a href="privacy.html">Privacy</a> page.</p>
+<h2>Sharing and Anywhere</h2>
+<p>Sharing is off until you switch it on. When you share, you decide who gets the link and the PINs, and anyone with both can see what that PIN allows until you turn sharing off or use Sign everyone out. Four-digit PINs are a convenience, not strong security, so don&rsquo;t share a script that would be harmful in the wrong hands. The Anywhere service runs on Google&rsquo;s Firebase and is offered as is. It can be slow, interrupted or changed, so never make it the only way the room can see a cue.</p>
+<h2>The trial and pricing</h2>
+<p>Every feature is unlocked during the trial. After that, a simple subscription keeps Cadence Prompt supported and improving. I&rsquo;ll tell you the price and the terms before anything is charged, and nothing is charged during the beta.</p>
+<h2>What I can and can&rsquo;t promise</h2>
+<p>I&rsquo;ll fix what I can, as fast as I can. But I can&rsquo;t promise Cadence Prompt will be error-free or always available, so it&rsquo;s provided as is, without warranties of any kind. To the extent the law allows, I&rsquo;m not liable for indirect or consequential losses, such as a lost show, a missed cue or lost income. My total liability for anything related to Cadence Prompt is limited to what you paid me in the twelve months before the problem. Nothing here limits anything the law doesn&rsquo;t allow me to limit.</p>
+<h2>Other names</h2>
+<p>Cadence Prompt isn&rsquo;t affiliated with or endorsed by Elgato (Stream Deck), Bitfocus (Companion), Microsoft, Apple, Google or NDI. Those names belong to their owners, and I use them only to say what works with what.</p>
+<h2>Ending and changing these terms</h2>
+<p>You can stop using Cadence Prompt any time. I can switch off an access code that&rsquo;s being misused. If I change these terms, I&rsquo;ll update the date at the top, and for anything big I&rsquo;ll tell beta users by email. Using the app after a change means you accept it.</p></section>""")
 
 P["send-a-script.html"] = ("Send us a script in more than one language | Cadence Prompt", "How to prepare a script in two or more languages so Cadence can read each one as its own script.",
     hero("Sending a script in more than one language", "Three ways that work, and three rules for all of them.", False) + """<section class="wrap prose">
