@@ -241,7 +241,7 @@ def shot_media(title):
 BETA_NOTE = '<p class="note">Features marked <span class="badge">Beta</span> are built and tested, but they haven&rsquo;t been battle-tested by hand on a live show yet. They&rsquo;re included in the 0.2.2 beta.</p>'
 
 
-BETA_WITH_PICTURE = {"Snap to stanza"}   # Beta cards that show their picture anyway
+BETA_WITH_PICTURE = {"Snap to stanza", "Prepare tab"}   # Beta cards that show their picture anyway
 
 def feat_block(f):
     if isinstance(f, str):
