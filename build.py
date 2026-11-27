@@ -349,24 +349,25 @@ P["changelog.html"] = ("Changelog | Cadence Prompt", "What changed in each versi
 P["support.html"] = ("Support | Cadence Prompt", "Contact and support.",
     hero("Support", "Run into a snag? Tell me what happened.", False) + '<section class="wrap prose"><p>Email <a href="mailto:CadencePrompt@gmail.com">CadencePrompt@gmail.com</a> and include your app version along with what you were doing when it came up.</p><p>Tell me what&rsquo;s working and what still needs fixing. If something&rsquo;s broken, I&rsquo;m ready to make it right. Share your wins too. Hearing what saved you on a real show tells me exactly what to protect.</p></section>')
 P["about.html"] = ("About | Cadence Prompt", "Why Cadence Prompt exists.",
-    hero("Why I built Cadence Prompt", "Eighteen years of shows, and one tool I kept working around.", False) +
-    '<section class="wrap prose"><p class="note">Draft in Brad\'s voice, built from the founder survey. To rewrite in his own words before it goes live.</p>'
-    '<p>I have worked in live events for eighteen years. I started by cleaning the office of a neighbor who ran a teleprompter company, and I ended up running graphics and media servers on shows of every size. I still run prompter today.</p>'
-    '<p>The software I used most was a great tool once. Over the years I learned its bugs by heart. I built shortcuts around them with a Stream Deck and a pile of macros. Then I caught myself building tools to make a broken tool work, and I decided to build the right tool instead.</p>'
-    '<p>The first thing I fixed was coloring text. It took five clicks for every cue. Now it takes one. That is how Cadence Prompt started: one small, annoying thing, fixed for real.</p>'
-    '<h2>What I am here to do</h2>'
-    '<p>To make events better for presenters, operators and crews, so much better that none of them can imagine a show without the ease and connectedness Cadence Prompt brings.</p>'
-    '<p>I want a prompter as good for the crew behind the scenes as it is for the presenter on stage. If it does its job, nobody notices it. I am not trying to be the loudest tool in the room. I want to be the one that is there, every show, doing what I said it would.</p>'
+    hero("Why I built Cadence Prompt", "Eighteen years of live shows, and one tool I got tired of working around.", False) +
+    '<section class="wrap prose">'
+    '<p>I&rsquo;ve worked in live events for eighteen years. I got my start cleaning the office for a neighbor who ran a teleprompter company, and before long I was running prompter, presentation graphics and media servers on shows of every size.</p>'
+    '<p>The software I used most was a great tool once. Over the years, I learned every one of its quirks and bugs by heart. I built workarounds with a Stream Deck and a long list of ways to make things more efficient, most of them using apps outside the prompter. Then one day I caught myself building tools just to make a broken tool behave, and I decided to build the right tool instead.</p>'
+    '<p>The very first thing I fixed was coloring text. It used to take four or five clicks just to color a single cue: select the text, right-click, pick color, choose text or background, hit OK. Doing that for an entire script was maddening. Now it takes one click. That&rsquo;s how Cadence Prompt started: one small, annoying headache, fixed for real.</p>'
+    '<p>I named it Cadence for the feel of movement, rhythm and pace. When a prompter does its job, the presenter stops reading and starts connecting.</p>'
+    '<h2>What I&rsquo;m here to do</h2>'
+    '<p>I want to make live events better for presenters, operators and crews. Better enough that none of them can imagine running a show without the calm and connection Cadence Prompt brings to the room.</p>'
+    '<p>In live events, clients are sometimes under-prepared, and the clock never stops moving. The answer isn&rsquo;t to stress about it. It&rsquo;s to be over-prepared enough to handle whatever lands at five o&rsquo;clock. I wanted a prompter that&rsquo;s just as good for the crew behind the scenes as it is for the presenter on stage. I&rsquo;m not trying to build the loudest tool in the room. I want to build the one that shows up on every gig and does exactly what it promised.</p>'
     '<h2>What I hold to</h2>'
     '<ul class="values">'
-    '<li><strong>Accuracy before speed.</strong> A late change is only fast if it is right. Cadence shows you what changed and applies nothing silently.</li>'
+    '<li><strong>Accuracy before speed.</strong> A late change is only fast if it&rsquo;s right. Cadence shows you what changed and applies nothing silently.</li>'
     '<li><strong>Calm in the moment.</strong> The screen should never add to the pressure.</li>'
     '<li><strong>Every seat in the room matters.</strong> The operator, the presenter and the crew each get something built for them.</li>'
-    '<li><strong>Honest by default.</strong> If it is not built, it says coming soon. If it is a claim, it is checked.</li>'
+    '<li><strong>Honest by default.</strong> If it&rsquo;s not built, it says coming soon. If it&rsquo;s a claim, it&rsquo;s checked.</li>'
     '<li><strong>Built from real shows.</strong> Every feature starts with a problem someone lived.</li>'
     '<li><strong>Solve what you thought you had to live with.</strong> Add value without being asked.</li></ul>'
-    '<h2>What I will do for you</h2>'
-    '<p>Tell me what is working and what needs fixing. Ready to make it right. Share your wins too: they tell me what to protect.</p></section>')
+    '<h2>What I&rsquo;ll do for you</h2>'
+    '<p>Tell me what&rsquo;s working and what still needs fixing. If something&rsquo;s broken, I&rsquo;m ready to make it right. Share your wins too. Hearing what saved you on a real show tells me exactly what to protect.</p></section>')
 P["privacy.html"] = ("Privacy | Cadence Prompt", "What Cadence Prompt keeps, what leaves your computer, and what the optional Anywhere service handles.", hero("Privacy", "Cadence Prompt works on your computer. Nothing leaves it unless you switch something on. Last updated 11 November 2026.", False) + """<section class="wrap prose">
 <h2>The app on your computer</h2>
 <p>Your scripts, run sheets, pictures, settings and cue lists stay on your computer. Cadence Prompt does not send usage statistics, and an access code is checked on your computer, without contacting anyone.</p>
