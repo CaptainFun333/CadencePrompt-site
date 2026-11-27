@@ -439,7 +439,6 @@ P["send-a-script.html"] = ("Send us a script in more than one language | Cadence
 <p>Send it as it is and tell us which language you need. Cadence can still import it, but someone has to prepare it by hand.</p>
 <h2>Please avoid</h2>
 <p>Facing pages (one language on the left page, one on the right), translations hidden in footnotes or comments, and languages switched off through Word styles. They are hard to read without guessing. Any of the three ways above is easy to send instead.</p>
-<p class="note">A page on this site to help clients prepare their content the best way is planned, and will come later.</p>
 </section>""")
 
 import learn
