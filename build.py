@@ -378,7 +378,7 @@ P["privacy.html"] = ("Privacy | Cadence Prompt", "What Cadence Prompt keeps, wha
 <h3>What passes through the service</h3>
 <ul>
 <li>While someone is watching from outside: the timer clocks and segment names. The script text and the place you are reading go through only if Share the script text is on.</li>
-<li>From viewers: ticks and notes on the cue sheet (with the Edit PIN), and suggestions on lines (with the Notes or Edit PIN).</li>
+<li>From viewers: ticks and notes on the cue sheet (with the Edit PIN), and suggestions on lines (with the Edit PIN).</li>
 <li>PINs are kept only as salted hashes. The service cannot tell you a PIN and cannot recover one.</li>
 <li>For each access code and month, the service keeps only counts: shows opened, viewers let in, and minutes. It keeps no content, no names, and no addresses of viewers.</li>
 </ul>
