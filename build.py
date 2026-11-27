@@ -200,7 +200,7 @@ PILLARS = [
 # Real screenshots, by feature title: (file in assets/shots, alt text). A feature with no entry keeps its placeholder.
 # All were captured from the app with a fictional sample script; see docs/screenshots in the Cadence repo.
 SHOTS = {
-    "Speaker timer": ("time-speaker-timer.png", "The speaker timer page mid-segment: the real time and time remaining, an estimate showing the speaker under time, and Coming up with the time to each cue and the next segment and its slides."),
+    "Speaker timer": ("time-speaker-timer.png", "Two screens side by side. What the speaker sees: the prompter text with the clock and a small green estimate, 19 seconds under. What the crew sees: the speaker timer page with the estimate under time, Coming up with the time to each cue, the time remaining as a large clock, and the next segment."),
     "Coming up": ("time-coming-up.png", "Coming up in the operator window: audio, video and general cues, then the CEO keynote timer set and its slides, each with its kind, name and the time until it."),
     "Timer cues in the script": ("time-timer-cues.png", "The live bar indicator reading Armed in green, and the same indicator reading OFF in red when the cues are disarmed."),
     "Share the show": ("time-share.png", "The Collaboration drawer with Sharing on the local network and the View and Edit PINs, next to the speaker timer page it shares."),
@@ -210,6 +210,7 @@ SHOTS = {
     "Margins and alignment": ("read-margins-alignment.png", "The Prompter tab with the text size, line spacing, the Normal and Custom margins with left and right numbers, and the settings new scripts start with."),
     "Back up smoothly": ("read-backward.mp4", "The script scrolling forward, then backward, as the speed passes through zero."),
     "The live bar": ("show-live-bar.png", "The operator window with both bars: the live bar across the top (play, speed, zoom, bookmarks, cue to cue, page jumps, snap and the Armed indicator) moves the prompter, and the bar under the script (Add cue, Segment, Set, Start, Finish, bookmarks, Edit size) changes the script at your cursor."),
+    "Edit on the fly": ("edit-held.png", "The operator window while the script plays and the editor is held: the strip above the script reads Editor held with a Resume following button, the prompter still leads, and the cursor sits in the line being changed."),
     "One search box": ("show-palette.png", "The search box open with find typed, listing the find commands, with their shortcuts."),
     "Organized controls": ("show-ribbon-timer.png", "The operator window with the Timer drawer open at the left, with its Clock colors fold, beside the script, the preview and the timer card."),
     "Any display setup": ("show-display-checklist.png", "The Show tab with the Auto, Extended and Mirrored display buttons, and the Before you go live buttons, beside the Before you go live checklist."),
