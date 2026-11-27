@@ -42,7 +42,7 @@ def ph(label, h=320):
 def hero(h, sub, cta=True, eyebrow=""):
     e = f'<p class="eyebrow">{eyebrow}</p>' if eyebrow else ""
     c = (f'<p><a class="btn" href="download.html">{CHEV}Try Cadence Prompt</a> '
-         f'<a class="link" href="features.html">See what is different</a></p>') if cta else ""
+         f'<a class="link" href="features.html">See what&rsquo;s different</a></p>') if cta else ""
     return f'<section class="hero"><div class="wrap">{e}<h1>{h}</h1><p class="sub">{sub}</p>{c}</div></section>'
 
 
@@ -238,7 +238,7 @@ def shot_media(title):
     return f'<figure class="shotfig"><a href="assets/shots/{src}"><img src="assets/shots/{src}" alt="{alt}" loading="lazy"></a></figure>'
 
 
-BETA_NOTE = '<p class="note">Features marked <span class="badge">Beta</span> are built and tested, but have not yet been tried by hand at a real show. They are in the 0.2.2 beta.</p>'
+BETA_NOTE = '<p class="note">Features marked <span class="badge">Beta</span> are built and tested, but they haven&rsquo;t been battle-tested by hand on a live show yet. They&rsquo;re included in the 0.2.2 beta.</p>'
 
 
 BETA_WITH_PICTURE = {"Snap to stanza"}   # Beta cards that show their picture anyway
@@ -277,8 +277,8 @@ pillar_cards = "".join(
 
 P["index.html"] = ("Cadence Prompt: teleprompter software for the whole show",
     "Teleprompter software built for the presenter, the operator and the crew.",
-    hero("You do not have to live with it.",
-         "We keep putting up with the same prompter pain points because we assume they come with the job. They do not. Cadence Prompt is the prompter, rebuilt for the whole room: prep in minutes, run the show with your hands on it, and a crew that sees the same clock you do.") +
+    hero("You don&rsquo;t have to live with it.",
+         "We keep putting up with the same prompter pain points because we assume they come with the job. They don&rsquo;t. Cadence Prompt is the prompter, rebuilt for the whole room: prep in minutes, run the show with your hands on it, and a crew that sees the same clock you do.") +
     f'<section class="wrap shot"><figure class="shotfig hero-shot"><a href="assets/shots/home-hero.png"><img src="assets/shots/home-hero.png" alt="The Cadence Prompt operator window: the live bar across the top, the ribbon at left, the script with colored speakers and cues, and the preview, timer card and Coming up in the side column."></a></figure></section>'
         '<section class="wrap live"><h2>Sound familiar?</h2><ul class="pains">'
     '<li><a class="pain" href="prep.html"><span class="prob">Hours spent formatting a script by hand.</span>' + CHEV + '<span class="sol">Import &amp; Prep takes it from raw doc to show-ready in minutes.</span></a></li>'
@@ -299,7 +299,7 @@ P["index.html"] = ("Cadence Prompt: teleprompter software for the whole show",
     '<section class="wrap cta"><h2>Try it on your next show.</h2><p><a class="btn" href="download.html">' + CHEV + 'Download</a></p></section>')
 
 P["features.html"] = ("Features | Cadence Prompt", "What Cadence Prompt does differently.",
-    jump_strip() + hero("What is different", "Four places to start, built around the three people in the room.", False) +
+    jump_strip() + hero("What&rsquo;s different", "Four places to start, built around the three people in the room.", False) +
     '<section class="wrap stack">' + "".join(
         f'<article class="feat"><div><p class="eyebrow">{p["audiences"]}</p><h2><a href="{p["slug"]}.html">{p["name"]}</a></h2><p>{p.get("fcard", p["lede"])}</p>'
         f'<p><a class="link0" href="{p["slug"]}.html">See {p["name"].lower()} &rarr;</a></p></div>{ART[p["slug"]]()}</article>' for p in PILLARS) + "</section>")
@@ -310,7 +310,7 @@ P["download.html"] = ("Get Cadence Prompt | Cadence Prompt", "Ask for a beta acc
     '<article><h2>Download the beta</h2><p><strong>Current version: 0.2.1</strong> (November 21, 2026)</p><p>Grab the installer for your machine, then request a code to unlock it.</p><ul><li><a href="https://github.com/CaptainFun333/CadencePrompt-site/releases/download/beta-0.2.1/Cadence-Prompt-0.2.1-Mac-Apple-Silicon.dmg">Mac, Apple Silicon (M1 and later), 0.2.1</a></li><li><a href="https://github.com/CaptainFun333/CadencePrompt-site/releases/download/beta-0.2.1/Cadence-Prompt-0.2.1-Mac-Intel.dmg">Mac, Intel, 0.2.1</a></li><li><a href="https://github.com/CaptainFun333/CadencePrompt-site/releases/download/beta-0.2.1/Cadence-Prompt-0.2.1-Windows-Setup.exe">Windows, 0.2.1</a></li></ul><p class="note">Because the beta installers aren&rsquo;t code-signed yet, your computer will show a security warning the first time. On a Mac, right-click the app and choose Open. On Windows, click More info, then Run anyway.</p></article></section>'
     '<section class="wrap prose"><h2>What you need</h2><p>A Mac or Windows computer. You don&rsquo;t need a Stream Deck to run Cadence. It works great without one, and even better with one.</p><h2>Trial and pricing</h2><p>Every single feature is unlocked during the trial. After that, a simple subscription keeps Cadence Prompt supported and improving, and I&rsquo;ll always be upfront about what it pays for.</p></section>')
 P["help.html"] = ("Help | Cadence Prompt", "Read the Cadence Prompt manual and find answers.",
-    hero("Help", "Dive into the manual, or learn right on the glass with the built-in practice series that come with the app.", False) +
+    hero("Help", "Dive into the manual, or learn right on the prompter with the built-in practice series that come with the app.", False) +
     '<section class="wrap cols"><article><h3>The manual</h3><p>The exact same manual built into the app, complete with instant search. It covers the Learn series, Edit view and Prompt view, Prepare, Speaker Style, Runlists, the Speaker timer, the Cue sheet, the crew pages, NDI feeds, Snap to stanza and a reference for every drawer.</p><p><a class="btn" href="manual.html">' + CHEV + 'Read the manual</a></p></article>'
     '<article><h3>In the app</h3><p>Press Command-Shift-/ (Control-Shift-/ on Windows) and type what you&rsquo;re looking for. Help search shows you right where the control lives and gives you its shortcut. The built-in Learn series walk you through each feature live at a practice stop.</p></article>'
     '<article><h3>Still stuck?</h3><p>Email <a href="mailto:CadencePrompt@gmail.com">CadencePrompt@gmail.com</a> anytime. If you&rsquo;re running a beta build, you can also go to Help, then Report a Problem or Request a Feature right inside the app. <a href="support.html">Support</a></p></article></section>'
