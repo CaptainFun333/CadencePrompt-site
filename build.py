@@ -206,6 +206,7 @@ SHOTS = {
     "Share the show": ("time-share.png", "The Collaboration drawer with Sharing on the local network and the View and Edit PINs, next to the speaker timer page it shares."),
     "Cue colors": ("time-cue-colors.png", "The script editor with a bookmark mark and general, audio, slide and video cues each in its own color, above a timer cue and the first lines of the script."),
     "Stream Deck": ("run-stream-deck.png", "The Stream Deck + beside the Stream Deck + XL, both running Cadence: color-framed keys by category, a touch strip with live readouts for bookmark, timer cues, text size and speed, and dials underneath. The + XL shows 36 keys and six dials."),
+    "Snap to stanza": ("snap-marks.png", "A snapped hymn on the prompter: a START mark beside the first stanza, a smaller mark at the next stop and LAST beside the final stanza, with the reading marker at the left edge."),
     "Speaker Style": ("read-speaker-styles.png", "The Speaker Style tab: each style with a name, color, size, alignment, spacing and snap, the collection they belong to, and a sample at each speaker's color."),
     "The reading marker": ("read-marker.png", "The Marker group of the Prompter tab: the marker shapes, its side, its color, its size and the bookmark color."),
     "Margins and alignment": ("read-margins-alignment.png", "The Prompter tab with the text size, line spacing, the Normal and Custom margins with left and right numbers, and the settings new scripts start with."),
@@ -240,13 +241,15 @@ def shot_media(title):
 BETA_NOTE = '<p class="note">Features marked <span class="badge">Beta</span> are built and tested, but have not yet been tried by hand at a real show. They are in the 0.2.2 beta.</p>'
 
 
+BETA_WITH_PICTURE = {"Snap to stanza"}   # Beta cards that show their picture anyway
+
 def feat_block(f):
     if isinstance(f, str):
         return f'<h2 class="group">{f}</h2>'
     title, head, copy, shot, status = f
     copy = copy.replace("__BETA__", ' <span class="badge">Beta</span>')
     badge = {"soon": '<span class="badge">Coming soon</span>', "beta": '<span class="badge">Beta</span>'}.get(status, "")
-    media = (shot_media(title) if title in SHOTS else (ph("Capture: " + shot, 240) if shot else "")) if status == "live" else ""
+    media = (shot_media(title) if title in SHOTS else (ph("Capture: " + shot, 240) if shot else "")) if (status == "live" or title in BETA_WITH_PICTURE) else ""
     cls = "feat" if media else "feat feat-text"
     return (f'<article class="{cls}"><div><p class="eyebrow">{title}{badge}</p><h2>{head}</h2><p>{copy}</p></div>{media}</article>')
 
