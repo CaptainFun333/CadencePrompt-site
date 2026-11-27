@@ -205,6 +205,7 @@ SHOTS = {
     "Timer cues in the script": ("time-timer-cues.png", "The live bar indicator reading Armed in green, and the same indicator reading OFF in red when the cues are disarmed."),
     "Share the show": ("time-share.png", "The Collaboration drawer with Sharing on the local network and the View and Edit PINs, next to the speaker timer page it shares."),
     "Cue colors": ("time-cue-colors.png", "The script editor with a bookmark mark and general, audio, slide and video cues each in its own color, above a timer cue and the first lines of the script."),
+    "Stream Deck": ("run-stream-deck.png", "The Stream Deck + beside the Stream Deck + XL, both running Cadence: color-framed keys by category, a touch strip with live readouts for bookmark, timer cues, text size and speed, and dials underneath. The + XL shows 36 keys and six dials."),
     "Speaker Style": ("read-speaker-styles.png", "The Speaker Style tab: each style with a name, color, size, alignment, spacing and snap, the collection they belong to, and a sample at each speaker's color."),
     "The reading marker": ("read-marker.png", "The Marker group of the Prompter tab: the marker shapes, its side, its color, its size and the bookmark color."),
     "Margins and alignment": ("read-margins-alignment.png", "The Prompter tab with the text size, line spacing, the Normal and Custom margins with left and right numbers, and the settings new scripts start with."),
